@@ -1,0 +1,1057 @@
+@font-face {
+  font-family: "GT Super";
+  src: url("../../fonts/Grilli-Type/GT-Super-Display-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GT Super";
+  src: url("../../fonts/Grilli-Type/GT-Super-Display-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+section {
+  padding-top: 80px;
+  padding-bottom: 41px;
+  color: #025A4D;
+  font-family: "Roboto Mono";
+}
+
+.btn-3D, .article7 .list-mission .btn-mission, .article5 .information .buttons .btn-information, .article4 .music-and-notes .notes .btn-note, .article3 .actions .action .btn-action, .article1 .rightPart .musicDescription .input-eth .btn-bid {
+  display: inline;
+  position: absolute;
+}
+.btn-3D .btn, .article7 .list-mission .btn-mission .btn, .article5 .information .buttons .btn-information .btn, .article4 .music-and-notes .notes .btn-note .btn, .article3 .actions .action .btn-action .btn, .article1 .rightPart .musicDescription .input-eth .btn-bid .btn {
+  color: #025A4D;
+  position: absolute;
+  font-size: 18px;
+  background-color: #F6E53B;
+  border: solid 1px #025A4D;
+}
+.btn-3D .btn::before, .article7 .list-mission .btn-mission .btn::before, .article5 .information .buttons .btn-information .btn::before, .article4 .music-and-notes .notes .btn-note .btn::before, .article3 .actions .action .btn-action .btn::before, .article1 .rightPart .musicDescription .input-eth .btn-bid .btn::before {
+  position: absolute;
+  content: "";
+  bottom: -9px;
+  height: 7px;
+  width: 98%;
+  left: 3px;
+  transform: skewX(45deg);
+  border: solid 1px #025A4D;
+}
+.btn-3D .btn::after, .article7 .list-mission .btn-mission .btn::after, .article5 .information .buttons .btn-information .btn::after, .article4 .music-and-notes .notes .btn-note .btn::after, .article3 .actions .action .btn-action .btn::after, .article1 .rightPart .musicDescription .input-eth .btn-bid .btn::after {
+  position: absolute;
+  content: "";
+  right: -8px;
+  height: 100%;
+  width: 6px;
+  bottom: -5px;
+  transform: skewY(45deg);
+  border: solid 1px #025A4D;
+}
+.btn-3D .square, .article7 .list-mission .btn-mission .square, .article5 .information .buttons .btn-information .square, .article4 .music-and-notes .notes .btn-note .square, .article3 .actions .action .btn-action .square, .article1 .rightPart .musicDescription .input-eth .btn-bid .square {
+  position: absolute;
+  height: 47px;
+  background-color: white;
+  border: solid 1px #025A4D;
+  top: 7px;
+  left: 8px;
+}
+
+button {
+  font-family: "Roboto Mono";
+}
+
+a, button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.article1 {
+  display: flex;
+  background-image: url("../../img/homePage/article 1/Background.png");
+  background-repeat: no-repeat;
+}
+.article1 .leftPart {
+  width: 35%;
+}
+.article1 .leftPart > p {
+  font-size: 51px;
+  font-size: 3.542vw;
+  font-family: "GT Super";
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: revert;
+}
+.article1 .leftPart .trees {
+  display: flex;
+  font-family: "Roboto Mono";
+}
+.article1 .leftPart .trees .tree {
+  width: 120px;
+  margin-right: 5%;
+  padding: 15px;
+}
+.article1 .leftPart .trees .tree1 {
+  color: white;
+  background-color: #025A4D;
+}
+.article1 .leftPart .trees .tree2 {
+  color: #025A4D;
+  background-color: white;
+  border: solid 1px #025A4D;
+}
+.article1 .leftPart .trees .number {
+  font-size: 25px;
+  font-weight: bold;
+}
+.article1 .leftPart .trees .description {
+  font-size: 18px;
+}
+.article1 .rightPart {
+  font-family: "Roboto Mono";
+  font-size: 15px;
+  display: flex;
+}
+.article1 .rightPart > img {
+  background-color: white;
+  padding: 10px;
+  object-fit: cover;
+}
+.article1 .rightPart .musicDescription {
+  position: relative;
+}
+.article1 .rightPart .musicDescription .musicTitle {
+  display: flex;
+  padding-bottom: 5px;
+}
+.article1 .rightPart .musicDescription .musicTitle img {
+  height: 16px;
+}
+.article1 .rightPart .musicDescription .current-bi {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.article1 .rightPart .musicDescription .current-bi .time {
+  font-size: 30px;
+  font-weight: bold;
+}
+.article1 .rightPart .musicDescription .input-eth {
+  position: relative;
+  margin-bottom: 20px;
+}
+.article1 .rightPart .musicDescription .input-eth input {
+  width: 50%;
+  border: 2px solid #025A4D;
+  height: 45px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.article1 .rightPart .musicDescription .input-eth input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.article1 .rightPart .musicDescription .input-eth input:read-write {
+  color: #025A4D;
+}
+.article1 .rightPart .musicDescription .input-eth input:focus {
+  outline: none;
+}
+.article1 .rightPart .musicDescription .input-eth #crypto {
+  position: absolute;
+  top: 12px;
+  font-size: 15px;
+}
+.article1 .rightPart .musicDescription .input-eth .btn-bid {
+  margin-left: 20px;
+}
+.article1 .rightPart .musicDescription .input-eth p {
+  font-size: 12px;
+}
+.article1 .rightPart .musicDescription .other-music {
+  display: grid;
+  grid-template-rows: repeat(3, fit-content(20%));
+  grid-gap: 10px;
+}
+.article1 .rightPart .musicDescription .other-music .music {
+  font-weight: bold;
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 10% 50% 20px 1fr 1fr;
+  align-items: center;
+  grid-gap: 5px;
+}
+.article1 .rightPart .musicDescription .other-music .music .musicImg {
+  width: 20px;
+}
+.article1 .rightPart .musicDescription .other-music .music p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.article1 .rightPart .musicDescription .other-music #bid-history {
+  display: grid;
+  font-size: 10px;
+  grid-template-columns: repeat(2, fit-content(40%));
+  align-items: center;
+  grid-gap: 10px;
+}
+.article1 .rightPart .musicDescription .circle {
+  position: absolute;
+}
+
+.article2 {
+  width: 100%;
+  font-family: "GT Super";
+  font-weight: bold;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+.article2 .textVisible {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  padding-top: 10px;
+}
+.article2 .textVisible .left {
+  float: left;
+  position: relative;
+  left: -2%;
+  margin-bottom: 30px;
+}
+.article2 .textVisible .left span {
+  background-image: url("../../img/homePage/article 2/Border.png");
+  padding: 10px 20px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.article2 .textVisible .right {
+  float: right;
+  right: -1%;
+  position: relative;
+}
+.article2 .textBackground {
+  opacity: 0.05;
+}
+.article2 .textBackground .left {
+  float: left;
+  position: relative;
+  left: -20%;
+  top: 10px;
+}
+.article2 .textBackground .right {
+  float: right;
+  position: relative;
+  right: -25%;
+}
+
+.article3 {
+  padding: 50px 15%;
+}
+.article3 .actions {
+  display: grid;
+  align-items: flex-start;
+  justify-items: center;
+}
+.article3 .actions .action {
+  text-align: center;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 20px;
+}
+.article3 .actions .action .btn-action-parent {
+  height: 60px;
+}
+.article3 .actions .action .btn-action {
+  margin: 0;
+  left: calc(50% - 40px);
+}
+.article3 .actions .action .btn-action .btn {
+  padding: 10px 25px;
+}
+.article3 .actions .action .btn-action .btn::after {
+  right: -9px;
+}
+.article3 .actions .action .btn-action .btn::before {
+  bottom: -8px;
+  height: 6px;
+  width: 100%;
+  left: 3px;
+}
+.article3 .actions .action .btn-action .square {
+  width: 79px;
+  height: 45px;
+  top: 7px;
+  left: 7px;
+}
+.article3 .actions #specialAction {
+  grid-template-rows: 200px 80px;
+  position: relative;
+}
+.article3 .actions #specialAction .btn-action-parent {
+  transform: rotate(90deg) scale(1, -1);
+}
+.article3 .actions #specialAction .btn-action-parent .btn {
+  background-color: #025A4D;
+}
+.article3 .actions #specialAction .hand {
+  position: absolute;
+  top: 110px;
+  left: 100px;
+}
+
+.article4 {
+  margin-top: 100px;
+}
+.article4 .music-and-notes .curvedSentence {
+  padding: 0 10% 50px 10%;
+}
+.article4 .music-and-notes .notes {
+  position: relative;
+  height: 40px;
+}
+.article4 .music-and-notes .notes .btn-note {
+  width: 2%;
+  left: 81%;
+  bottom: 180px;
+  margin: 0;
+  transform: rotateZ(9deg);
+}
+.article4 .music-and-notes .notes .btn-note .btn {
+  padding: 20px 40px;
+  background-color: white;
+}
+.article4 .music-and-notes .notes .btn-note .btn::after {
+  right: -8px;
+}
+.article4 .music-and-notes .notes .btn-note .btn::before {
+  bottom: -8px;
+  height: 6px;
+  width: 100%;
+  left: 3px;
+}
+.article4 .music-and-notes .notes .btn-note .square {
+  width: 80px;
+  height: 40px;
+  top: 7px;
+  left: 7px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.article4 .music-and-notes .notes .btn-note .note3 {
+  width: 30px;
+  top: 0;
+  left: 0;
+  margin-left: calc(50% - 15px);
+  margin-top: 5%;
+}
+.article4 .music-and-notes .notes img {
+  width: 2%;
+  position: absolute;
+}
+.article4 .music-and-notes .notes .note1 {
+  left: 15%;
+  bottom: 55px;
+}
+.article4 .music-and-notes .notes .note2 {
+  left: 63%;
+  bottom: 50px;
+}
+.article4 .music-and-notes .notes .note4 {
+  left: 94%;
+  bottom: 140px;
+}
+.article4 .music-and-notes .lstMusic {
+  overflow-x: clip;
+  background-color: white;
+}
+.article4 .music-and-notes .lstMusic img {
+  position: relative;
+  width: 13%;
+  min-width: 170px;
+  height: 20.63vh;
+  padding: 20px;
+  transition: 0.4s;
+  top: 0;
+}
+.article4 .music-and-notes .lstMusic img:hover {
+  transition: 0.4s;
+  top: -30px;
+}
+
+.article5 h1 {
+  padding-bottom: 80px;
+}
+.article5 .listen {
+  display: grid;
+  padding-bottom: 50px;
+  grid-template-columns: 70% 20%;
+  align-items: center;
+  grid-gap: 10%;
+}
+.article5 .listen img {
+  width: 100%;
+}
+.article5 .information {
+  width: 95%;
+  padding: 5%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: grid;
+  grid-gap: 10%;
+}
+.article5 .information .buttons {
+  display: flex;
+  position: relative;
+}
+.article5 .information .buttons .btn-information {
+  margin: 0;
+  left: 0;
+  top: 140%;
+  width: 40%;
+  height: 100%;
+}
+.article5 .information .buttons .btn-information .btn {
+  font-size: 1.25vw;
+  font-weight: bold;
+  height: 100%;
+  width: 100%;
+}
+.article5 .information .buttons .btn-information .btn::after {
+  right: -8px;
+}
+.article5 .information .buttons .btn-information .btn::before {
+  bottom: -8px;
+  height: 6px;
+  width: 100%;
+  left: 3px;
+}
+.article5 .information .buttons .btn-information .square {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  top: 7px;
+  left: 7px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.article5 .information .buttons #go-below {
+  left: 50%;
+}
+.article5 .information .buttons #go-below .btn {
+  background-color: white;
+}
+
+.article6 {
+  padding: 150px 15%;
+}
+.article6 .team {
+  background-image: url("../../img/homePage/article 6/Background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 60px 5% 100px 5%;
+  position: relative;
+}
+.article6 .team .rectangle-background {
+  position: absolute;
+  width: 71%;
+  height: 89%;
+  left: 15%;
+  top: 7%;
+  z-index: -1;
+  background-color: white;
+}
+.article6 .team .team-members {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 30% 36% 32%;
+  grid-gap: 3%;
+  justify-content: center;
+}
+.article6 .team .team-members .column {
+  display: grid;
+  grid-gap: 30px;
+}
+.article6 .team .team-members .column .member-image {
+  height: 100%;
+  width: 100%;
+}
+.article6 .team .team-members .member {
+  position: relative;
+}
+.article6 .team .team-members .member .parent-member-information {
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  position: absolute;
+  inset: 0;
+  padding: 15px;
+}
+.article6 .team .team-members .member .parent-member-information:hover .member-information {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s;
+}
+.article6 .team .team-members .member .parent-member-information .member-information {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  width: calc(100% - 30px);
+  height: calc(100% - 40px);
+  background-color: #F6E53B;
+  text-align: left;
+  border: solid 1px #025A4D;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 15px;
+}
+.article6 .team .team-members .member .parent-member-information .member-information .name {
+  font-weight: bold;
+  font-size: 25px;
+  font-size: 1.736vw;
+}
+.article6 .team .team-members .member .parent-member-information .member-information .text {
+  flex: 100%;
+}
+.article6 .team .team-members .member .parent-member-information .member-information .description {
+  font-size: 18px;
+  font-size: 1.25vw;
+  line-height: 165%;
+  height: 70%;
+  position: relative;
+  top: 10%;
+}
+.article6 .team .team-members .member .parent-member-information .member-information .middle-size .name {
+  font-size: 22px;
+  font-size: 1.57vw;
+}
+.article6 .team .team-members .member .parent-member-information .member-information .middle-size .description {
+  font-size: 16px;
+  font-size: 1.14vw;
+  line-height: 130%;
+}
+.article6 .team .team-members .member .parent-member-information .member-information .little-size .name {
+  font-size: 20px;
+  font-size: 1.4vw;
+}
+.article6 .team .team-members .member .parent-member-information .member-information .little-size .description {
+  font-size: 14px;
+  font-size: 0.9vw;
+  line-height: 130%;
+}
+.article6 .team .team-members .member .parent-member-information .member-information .links {
+  height: 12%;
+  display: flex;
+}
+.article6 .team .team-members .member .parent-member-information .member-information .links a {
+  text-decoration: none;
+  margin-right: 5%;
+}
+.article6 .team .team-members .member .parent-member-information .member-information .links a:hover .link {
+  box-shadow: 3px 3px 4px black;
+  transition: 0.3s;
+  height: 100%;
+}
+.article6 .team .team-members .member .parent-member-information .member-information .links a .link {
+  background-color: black;
+  border-radius: 50%;
+  box-shadow: 2px 2px 0 black;
+  height: 90%;
+  transition: 0.3s;
+}
+
+.article7 {
+  background-color: white;
+  padding-bottom: 300px;
+}
+.article7 .our-mission img {
+  background-image: url("../../img/homePage/article 7/Background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.article7 .our-mission p {
+  font-size: 18px;
+  font-size: 1.25vw;
+  color: black;
+  padding: 150px 19%;
+  text-align: center;
+}
+.article7 .list-mission {
+  height: 18vh;
+  display: grid;
+  grid-template-columns: repeat(5, 10%);
+  grid-gap: 5%;
+  justify-content: center;
+}
+.article7 .list-mission .btn-mission {
+  position: relative;
+}
+.article7 .list-mission .btn-mission .btn {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  font-size: 1.25vw;
+  text-align: left;
+  padding: 10%;
+}
+.article7 .list-mission .btn-mission .btn::before {
+  width: 99%;
+}
+.article7 .list-mission .btn-mission .square {
+  width: calc(100% - 3px);
+  height: calc(100% - 1px);
+}
+
+.article8 {
+  background-color: #025A4D;
+  color: white;
+  padding: 0 22% 300px 22%;
+}
+.article8 .earth {
+  width: 50%;
+  margin: 0 25%;
+  position: relative;
+  bottom: 130px;
+}
+.article8 .text {
+  font-size: 30px;
+  font-size: 2.083vw;
+  font-weight: bold;
+}
+.article8 .line {
+  width: 50%;
+  padding: 70px 0 40px 0;
+}
+
+.article9 {
+  padding: 150px 19% 0 19%;
+}
+.article9 h1 {
+  padding-bottom: 30px;
+}
+.article9 .faq {
+  padding-bottom: 70px;
+}
+.article9 .faq .subject {
+  font-weight: bold;
+  padding: 25px 0;
+  display: inline-block;
+}
+.article9 .faq .response {
+  padding-bottom: 30px;
+}
+.article9 .faq .chevron {
+  float: right;
+  padding: 25px 0;
+}
+.article9 .faq .line {
+  width: 100%;
+}
+.article9 .links {
+  justify-content: center;
+  display: flex;
+  padding: 0 30%;
+  height: 10%;
+}
+.article9 .links a {
+  margin: 0 1%;
+  width: 14%;
+  position: relative;
+}
+.article9 .links .link {
+  width: 70%;
+  transition: 0.3s;
+  position: absolute;
+}
+.article9 .links .link:hover {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.copyright {
+  text-align: center;
+  background-image: url("../../img/homePage/article 9/Background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 41vh;
+  font-weight: bold;
+}
+.copyright p {
+  position: relative;
+  top: 40%;
+}
+
+@media all and (min-width: 1151px) {
+  .article1 .rightPart .btn {
+    padding: 9px 40px 14px 40px;
+  }
+  .article1 .rightPart .square {
+    width: 111px;
+  }
+}
+@media all and (max-width: 1150px) {
+  .article1 .rightPart .btn {
+    padding: 9px 20px 14px 20px;
+  }
+  .article1 .rightPart .square {
+    width: 71px;
+  }
+}
+@media all and (min-width: 801px) {
+  .desktop-hidden {
+    display: none;
+  }
+
+  p {
+    font-size: 18px;
+    font-size: 1.25vw;
+  }
+
+  .article1 {
+    padding: 100px 7% 0 7%;
+    background-size: 100% 100%;
+    margin-bottom: 200px;
+  }
+  .article1 .rightPart {
+    background-image: url("../../img/homePage/article 1/Border 1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 1vw;
+    padding: 20px;
+  }
+  .article1 .rightPart > img {
+    width: 50%;
+  }
+  .article1 .rightPart .circle {
+    right: -20%;
+    bottom: -70px;
+    width: 35%;
+  }
+  .article1 .rightPart .musicDescription {
+    padding: 10px 25px;
+  }
+  .article1 .rightPart .musicDescription h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-size: 2vw;
+  }
+  .article1 .rightPart .musicDescription .current-bi .time {
+    font-size: 2vw;
+  }
+  .article1 .rightPart .musicDescription .input-eth p {
+    font-size: 0.833vw;
+  }
+  .article1 .rightPart .musicDescription .input-eth #crypto {
+    right: 35%;
+    left: 40%;
+  }
+  .article1 .rightPart .musicDescription .music {
+    font-size: 0.833vw;
+  }
+  .article1 .rightPart .musicDescription #bid-history {
+    font-size: 0.694vw;
+  }
+
+  .article2 .textVisible .left {
+    left: -2%;
+    margin-bottom: 30px;
+    font-size: 7.5vw;
+    font-size: 108px;
+  }
+  .article2 .textVisible .left span {
+    padding: 10px 20px;
+    background-size: 100% 100%;
+  }
+  .article2 .textVisible .right {
+    right: -1%;
+    font-size: 7.361vw;
+    font-size: 108px;
+  }
+  .article2 .textBackground .left {
+    font-size: 166px;
+    left: -20%;
+    top: 10px;
+    font-size: 11.528vw;
+    font-size: 166px;
+  }
+  .article2 .textBackground .right {
+    font-size: 160px;
+    font-size: 11.111vw;
+    right: -25%;
+  }
+
+  .article3 {
+    font-size: 18px;
+    font-size: 1.111vw;
+  }
+  .article3 .actions {
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(2, 300px);
+    grid-gap: 20px 0;
+  }
+  .article3 .actions .action {
+    grid-template-rows: 120px 55px 65px;
+  }
+
+  .article4 > img {
+    margin-left: 25%;
+    width: 18%;
+  }
+  .article4 .music-and-notes {
+    background-image: url("../../img/homePage/article 4/Background.png");
+    background-size: 100% 100%;
+  }
+  .article4 .music-and-notes .curvedSentence {
+    width: 80%;
+  }
+  .article4 .music-and-notes .notes {
+    display: flex;
+  }
+  .article4 .music-and-notes .lstMusic {
+    display: flex;
+  }
+
+  .article5 {
+    padding: 150px 15%;
+    font-size: 18px;
+    font-size: 1.25vw;
+  }
+  .article5 .information {
+    grid-template-columns: 55% 35%;
+    background-image: url("../../img/homePage/article 5/Background.png");
+  }
+}
+@media all and (max-width: 800px) {
+  .mobile-hidden {
+    display: none;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .article1 {
+    padding: 50px 7%;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  .article1 .leftPart {
+    display: none;
+  }
+  .article1 .rightPart {
+    padding: 0;
+    flex-direction: column;
+  }
+  .article1 .rightPart > img {
+    display: block;
+    width: calc(100% - 20px);
+  }
+  .article1 .rightPart .musicDescription {
+    padding-top: 20px;
+    display: block;
+  }
+  .article1 .rightPart .musicDescription .musicTitle {
+    flex-direction: column;
+  }
+  .article1 .rightPart .musicDescription .musicTitle p {
+    order: 2;
+  }
+  .article1 .rightPart .musicDescription .musicTitle img {
+    padding: 0 10px 10px 0;
+  }
+  .article1 .rightPart .musicDescription h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .article1 .rightPart .musicDescription .music p {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .article1 .rightPart .musicDescription #bid-history p {
+    font-size: 12px;
+  }
+  .article1 .rightPart .musicDescription .input-eth #crypto {
+    right: 35%;
+  }
+  .article1 .rightPart .musicDescription .input-eth input {
+    width: 70%;
+  }
+  .article1 .circle {
+    top: -50px;
+    width: 25%;
+    right: 2%;
+  }
+
+  .article2 {
+    padding: 50px 0;
+    display: block;
+  }
+  .article2 .textVisible .left {
+    font-size: 40px;
+    left: -11%;
+    margin-bottom: 30px;
+  }
+  .article2 .textVisible .left span {
+    padding: 10px 15px;
+  }
+  .article2 .textVisible .right {
+    font-size: 40px;
+    right: -37%;
+  }
+  .article2 .textBackground .left {
+    font-size: 60px;
+    left: -35%;
+    top: 15px;
+  }
+  .article2 .textBackground .right {
+    font-size: 60px;
+    left: 82%;
+    top: 25px;
+  }
+
+  .article3 {
+    overflow: hidden;
+  }
+  .article3 .actions {
+    grid-template-rows: repeat(6, fit-content(20%));
+    grid-gap: 70px;
+  }
+  .article3 .actions .action {
+    grid-template-rows: repeat(3, fit-content(120px));
+  }
+
+  .article4 .shooe-and-note {
+    background-image: url("../../img/homePage/article 1/Background.png");
+    background-repeat: no-repeat;
+    background-position: center -65px;
+    background-size: auto;
+    padding: 0 12.5% 45px 12.5%;
+    width: 75%;
+    position: relative;
+    overflow: hidden;
+  }
+  .article4 .shooe-and-note .shoe {
+    width: 100%;
+  }
+  .article4 .shooe-and-note .curvedSentence {
+    position: relative;
+    width: 1300px;
+    left: -8%;
+    bottom: 55px;
+  }
+  .article4 .shooe-and-note .notes {
+    display: flex;
+    height: 27.23px;
+  }
+  .article4 .shooe-and-note .notes .btn-note {
+    transform: rotateZ(7deg);
+    display: inline;
+    position: absolute;
+    left: 35%;
+    bottom: 120px;
+  }
+  .article4 .shooe-and-note .notes .btn-note .btn {
+    color: #025A4D;
+    position: absolute;
+    font-size: 18px;
+    width: 80px;
+    height: 45px;
+    background-color: white;
+    border: solid 1px #025A4D;
+  }
+  .article4 .shooe-and-note .notes .btn-note .btn::before {
+    position: absolute;
+    content: "";
+    bottom: -9px;
+    height: 7px;
+    width: 99%;
+    left: 3px;
+    transform: skewX(45deg);
+    border: solid 1px #025A4D;
+  }
+  .article4 .shooe-and-note .notes .btn-note .btn::after {
+    position: absolute;
+    content: "";
+    right: -8px;
+    height: 100%;
+    width: 6px;
+    bottom: -5px;
+    transform: skewY(45deg);
+    border: solid 1px #025A4D;
+  }
+  .article4 .shooe-and-note .notes .btn-note .square {
+    position: absolute;
+    height: 44px;
+    width: 77px;
+    border: solid 1px #025A4D;
+    top: 7px;
+    left: 8px;
+  }
+  .article4 .shooe-and-note .notes .btn-note img {
+    margin-top: 5px;
+  }
+  .article4 .shooe-and-note .notes .note2 {
+    position: absolute;
+    bottom: 53%;
+  }
+  .article4 .shooe-and-note .notes .note4 {
+    position: absolute;
+    right: 25%;
+    bottom: 115px;
+  }
+  .article4 .shooe-and-note .notes > img {
+    width: 7%;
+  }
+  .article4 .music-and-notes {
+    margin-top: 70px;
+  }
+  .article4 .music-and-notes .slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 350px;
+  }
+  .article4 .music-and-notes .slider .slides {
+    background: white;
+    padding: 25px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 60%;
+    transform: translateX(-380px);
+  }
+  .article4 .music-and-notes .slider .slides figure {
+    display: inline-block;
+    height: 100%;
+  }
+  .article4 .music-and-notes .slider .slides figure img {
+    padding: 0 10px;
+    width: 210px;
+    height: 100%;
+    position: relative;
+    transition: 0.3s;
+    bottom: 0;
+  }
+  .article4 .music-and-notes .slider .slides figure img:hover {
+    bottom: 30px;
+    transition: 0.3s;
+  }
+
+  .article5 {
+    padding: 50px 7%;
+  }
+  .article5 .listen {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .article5 .listen img {
+    width: 50%;
+    padding-bottom: 40px;
+  }
+  .article5 .information {
+    grid-template-rows: 1fr 1fr;
+    background-image: url("../../img/homePage/article 5/Background Mobile.png");
+  }
+  .article5 .information .buttons {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=homePage.css.map */

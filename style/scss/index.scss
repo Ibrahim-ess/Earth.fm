@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin:0;
+    padding : 0;
+}
+
+body {
+    background-color: #FFF5F2;
+}
+
+header {
+    height : 8vh;
+    background: rgba(255, 245, 242, 0.8);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+
+    .rowHeader {
+        height: 100%; 
+        width: 86%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        &>* {
+            display: flex;
+            &>*{
+                display: flex;
+            }
+        }
+    }
+
+    .tabs {
+        width: 100%;
+    }
+    
+    .underline {
+        position: relative;
+        margin : 0 20px;
+        padding: 8px 15px;
+
+        .tab {
+            list-style:none;
+            font-family: "Roboto Mono";
+            text-decoration: none;
+        }
+    }
+
+    .home {
+        padding: 0 40px 0 0;
+        border-right: solid 1px #025A4D;
+        margin-right: 20px;
+        #homeHeader {
+            margin: 0;
+            font-weight: 600;
+        }
+    }
+}
+
+h1 {
+    font-size: 71px;
+    font-size: 4.931vw;
+    font-family: "GT Super";
+    text-align: center;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    background-color: #025A4D;
+    width: 100%;
+    align-items: center;
+    img {
+        width: 45%;
+    }
+
+    #option {
+        width: 4px;
+        height: 20px;
+    }
+    p {
+        color: white;
+        font-family: "Roboto Mono";
+    }
+    .parent-hide-text {
+        position: relative;
+        .fadeout {
+            background: linear-gradient(90deg, rgba(2,90,77,0) 0%, rgba(2,90,77,0) 73%, rgba(2,90,77,0.9108018207282913) 91%, rgba(2,90,77,1) 100%);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .progress {
+        margin: 0 3%;
+        border: solid 1px rgba(255, 255, 255, 0.5);
+        position: relative;
+        .progress-line {
+            position: absolute;
+            border: 2px solid #F6E53B;
+            top : -2px;
+            width: 30%;
+            background-color: blue;
+            .cursor{
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                top: -6px;
+                left: 100%;
+                border-radius: 50%;
+                border: solid 4px #F6E53B;
+                
+            }
+        }
+    }
+}
+
+@keyframes header {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+@media all and (min-width : 801px) {
+    .desktop-hidden {
+        display: none;
+    }
+
+    h1 {
+        font-size: 71px;
+        font-size: 4.931vw;
+    }
+    .rowHeader {
+        &>* {
+            justify-content: space-between;
+        }
+    }
+    .underline {
+        &:hover {
+            cursor: pointer;
+            .tab {
+                color: white;
+                &::before {
+                    animation: header 0.4s ease forwards;                 
+                }
+            }
+            
+        }
+        .tab {
+            font-size: 1.042vw;
+            font-size: 15px;
+            color : #025A4D;
+            &::before {
+                content: '';
+                height: 1px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                opacity: 1;
+                background-color: #025A4D;
+                z-index: -1;
+            }
+        }
+    }
+    .list-header {
+        display: none;
+    }
+    footer {
+        height: 4.23vh;
+        padding: 0 20px;
+        grid-template-columns: 1fr 1fr 21% repeat(6,1fr) 45% repeat(3,1fr);
+        
+        p {
+            font-size: 12px;
+            font-size: 0.833vw;
+        }
+        #musicImg {
+            border: solid 1px white ;
+        }
+    }
+}
+
+@media all and (max-width : 800px ) {
+    .mobile-hidden {
+        display: none;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    #overlay {
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        background: black;
+        opacity: .5;
+        position: fixed;
+        z-index: 15;
+        top: 0;
+        left: 0;
+    }
+    header {
+        height : 89px;
+    }
+    .rowHeader {
+        &>* {
+            justify-content: flex-start;
+        }
+
+        .tabs {
+            position: absolute;
+            z-index: 20;
+            top: 0;
+            right: 0;
+            display: none;
+            flex-direction: column;
+            background : #025A4D;
+            padding-top: 150px;
+            width: 60%;
+            height: 100vh;
+            &>* {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .tab {
+            font-size: 30px;
+            color: white;
+        }
+        .home {
+            flex: 90%;
+            .tab {
+                font-size: 18px;
+                color: #025A4D;
+            }
+        }
+        
+        .list-header {
+            display: flex;
+            height: 40%;
+            position: relative;
+            flex: 10%;
+            z-index: 22;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                height: 3px;
+                width: 31px;
+                background : #025A4D;
+                position: absolute;
+                top: 0;
+                transform-origin: top left;
+
+            }
+            &::after {
+                content: '';
+                height: 3px;
+                width: 31px;
+                background : #025A4D;
+                position: absolute;
+                bottom: 0;
+                transform-origin: bottom left ;
+            }
+
+            span {
+                position: absolute;
+                top: 45%;
+                left: 5px;
+                width: 20px;
+                height: 3px;
+                background : #025A4D;
+            }
+        }
+        .cross-animation-show {
+            .list-header::after {
+                animation: crossAnimationTopShow 0.4s ease forwards;
+            }
+            .list-header::before {
+                animation: crossAnimationBottomShow 0.4s ease forwards;
+            }
+            .list-header span {
+                animation: crossAnimationMiddleShow 0.4s ease forwards;
+            }
+        }
+        .cross-animation-hide {
+            .list-header::after {
+                animation: crossAnimationTopHide 0.4s ease forwards;
+            }
+            .list-header::before {
+                animation: crossAnimationBottomHide 0.4s ease forwards;
+            }
+            .list-header span {
+                animation: crossAnimationMiddleHide 0.4s ease forwards;
+            }
+        }
+    }
+
+    footer {
+        grid-template-columns: 13% 60% 11% 11%;
+        height: 80px;
+        justify-items: center;
+
+        img {
+            width: 50%;
+        }
+        p {
+            font-size: 12px;
+            white-space: nowrap;
+        }
+        .progressEpisode {
+            width: 100%;
+
+            .parent-hide-text {
+                overflow: hidden;
+            }
+            .progress {
+                margin: 14px 10px 0 0;
+            }
+        }
+        
+        #musicImg {
+            width: 60%;
+            border: solid 2px white ;
+        }
+    }
+}
+
+/* TRANSFORM LIST INTO CROSS (SHOW LIST)*/
+@keyframes crossAnimationTopShow {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-45deg);
+        width: 44px;
+        background-color: white;
+    }
+}
+
+@keyframes  crossAnimationBottomShow{
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(45deg);
+        width: 44px;
+        background-color: white;
+    }
+}
+
+@keyframes  crossAnimationMiddleShow{
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(45deg);
+        visibility: hidden;
+        opacity: 0;
+        background-color: white;
+    }
+}
+
+/* TRANSFORM CROSS INTO LIST (HIDE LIST)*/
+
+@keyframes crossAnimationTopHide {
+    from {
+        transform: rotate(-45deg);
+    }
+
+    to {
+        transform: rotate(0);
+        width: 31px;
+    }
+}
+
+@keyframes  crossAnimationBottomHide{
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(0);
+        width: 31px;
+    }
+}
+
+@keyframes  crossAnimationMiddleHide{
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
