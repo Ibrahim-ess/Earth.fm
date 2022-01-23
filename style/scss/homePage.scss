@@ -18,7 +18,7 @@ section {
 
 .btn-3D {
     display: inline;
-    position: absolute;
+    position: relative;
 
     .btn {
         color: #025A4D;
@@ -31,7 +31,7 @@ section {
             content: '';
             bottom: -9px;
             height: 7px;
-            width: 98%;
+            width: 100%;
             left: 3px;
             transform: skewX(45deg);
             border: solid 1px #025A4D;
@@ -52,7 +52,6 @@ section {
         height: 47px;
         background-color: white;
         border : solid 1px #025A4D;
-        top: 7px;
         left: 8px;
     }
 }
@@ -424,14 +423,13 @@ a,button {
     }
 
     .information {
-        width: 95%;
-        padding: 5%;
         background-repeat: no-repeat;
         background-size: 100% 100%;
         display: grid;
         grid-gap : 10%;
         .buttons {
             display: flex;
+            gap: 10%;
             position: relative;
             .btn-information {
                 @extend .btn-3D;
@@ -441,7 +439,6 @@ a,button {
                 width: 40%;
                 height: 100%;
                 .btn {
-                    font-size: 1.250vw;
                     font-weight: bold;
                     height: 100%;
                     width: 100%;
@@ -465,7 +462,6 @@ a,button {
                 }
             }
             #go-below {
-                left: 50%;
                 .btn {
                     background-color: white;
                 }
@@ -475,13 +471,10 @@ a,button {
 }
 
 .article6 {
-    padding: 150px 15%;
     .team {
-        background-image: url("../../img/homePage/article 6/Background.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         text-align: center;
-        padding: 60px 5% 100px 5%;
         position: relative;
 
         .rectangle-background {
@@ -497,10 +490,6 @@ a,button {
 
         .team-members {
             margin-top: 40px;
-            display: grid;
-            grid-template-columns: 30% 36% 32% ;
-            grid-gap: 3%;
-            justify-content: center;
             
             .column {
                 display: grid;
@@ -758,7 +747,8 @@ a,button {
                 padding: 9px 40px 14px 40px;
             }
             .square {
-                width: 111px;
+                width: 112px;
+                top: -6px;
             }
         }
     }
@@ -771,15 +761,13 @@ a,button {
             }
             .square {
                 width : 71px;
+                top: -10px;
             }
         }
     }
 }
 
 @media all and (min-width : 801px ) {
-    .desktop-hidden {
-        display: none;
-    }
     p {
         font-size: 18px;
         font-size: 1.250vw;
@@ -910,16 +898,36 @@ a,button {
         font-size: 1.250vw;
 
         .information {
+            width: 95%;
+            padding: 5%;
             grid-template-columns : 55% 35%;
             background-image: url("../../img/homePage/article 5/Background.png");
+            
+            .btn {
+                font-size: 1.250vw;
+            }
+        }
+    }
+
+    .article6 {
+        padding: 150px 15%;
+        .team {
+            padding: 60px 5% 100px 5%;
+            background-image: url("../../img/homePage/article 6/Background.png");
+            .team-members {
+                display: grid;
+                grid-template-columns: 30% 36% 32% ;
+                grid-gap: 3%;
+                justify-content: center;
+            }
+        }
+        .rectangle-background {
+
         }
     }
 }
 
 @media all and (max-width : 800px ) {
-    .mobile-hidden {
-        display: none;
-    }
     
     p {
         font-size: 18px;
@@ -972,6 +980,12 @@ a,button {
                     }
                     input {
                         width: 70%;
+                    }
+                    .btn-bid {
+                        .square {
+                            top: -5px;
+                            width: 72px;
+                        }
                     }
                 }
             }
@@ -1162,11 +1176,131 @@ a,button {
             }
         }
         .information {
-            grid-template-rows : 1fr 1fr;
+            grid-template-rows : 1fr 1fr; 
             background-image: url("../../img/homePage/article 5/Background Mobile.png");
+            padding: 33px 10%;
+            width: 80%;
+
+            p {
+                height: 96px;
+            }
             .buttons {
                 flex-direction: column;
+                padding-top: 10px;
+                .btn-information {
+                    position: relative;
+                    font-size: 18px;
+                    top: 0;
+                    width: 100%;
+                    height: 46px;
+                }
+                #go-below {
+                    top: 35px;
+                }
             }
+        }
+    }
+
+    .article6 {
+        margin-top: 120px;
+        .team {
+            padding: 60px 0 100px 0;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url("../../img/homePage/article 6/Background Mobile.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                margin: 0 10%;
+                top: 0;
+                left: 0;
+                width: 80%;
+                height: 81%;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width : 71%;
+                height: 62%;
+                left: 15%;
+                top: 16%;
+                z-index: -1;
+                background-color: white;
+            }
+            .rectangle-background {
+            
+            }
+
+            
+            h1 {
+                padding: 0px 27%;
+                height: 92px;
+            }
+            .slider {
+                width: 100%;
+                overflow: scroll;
+                height: 500px;
+                margin-top: 50px;
+                .slides {
+                    display: flex;
+                    height: 100%;
+                    //transform: translateX(-380px);
+                    figure {
+                        display: inline-block;
+                        height: 100%;
+                        position: relative;
+                        img {
+                            padding: 0 10px;
+                            width: 260px;
+                            height: 325px;
+                            transition: .3s;
+                            bottom: 0;
+                            object-fit: cover;
+                        }
+
+                        &:hover {
+                            img {
+                                transition: .3s;
+                                height: 400px;
+                            }
+                            .parent-member-information {
+                                transition: .8s;
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                        .parent-member-information {
+                            position: absolute;
+                            bottom: 20px;
+                            left: 10px;
+                            right: 10px;
+                            padding: 0 8%;
+                            visibility: hidden;
+                            opacity: 0;
+                            .member-information {
+                                text-align: left;
+                                background-color: #F6E53B;
+                                border: solid 1px #025A4D;
+                                padding: 22px 15px;
+                                height: 50%;
+
+                                .name {
+                                    font-weight: bold;
+                                    font-size: 20px;
+                                    margin-bottom: 6px;
+                                }
+                                .description {
+                                    font-size: 16px;
+                                    line-height: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
 }

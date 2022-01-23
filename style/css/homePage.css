@@ -16,7 +16,7 @@ section {
 
 .btn-3D, .article7 .list-mission .btn-mission, .article5 .information .buttons .btn-information, .article4 .music-and-notes .notes .btn-note, .article3 .actions .action .btn-action, .article1 .rightPart .musicDescription .input-eth .btn-bid {
   display: inline;
-  position: absolute;
+  position: relative;
 }
 .btn-3D .btn, .article7 .list-mission .btn-mission .btn, .article5 .information .buttons .btn-information .btn, .article4 .music-and-notes .notes .btn-note .btn, .article3 .actions .action .btn-action .btn, .article1 .rightPart .musicDescription .input-eth .btn-bid .btn {
   color: #025A4D;
@@ -30,7 +30,7 @@ section {
   content: "";
   bottom: -9px;
   height: 7px;
-  width: 98%;
+  width: 100%;
   left: 3px;
   transform: skewX(45deg);
   border: solid 1px #025A4D;
@@ -50,7 +50,6 @@ section {
   height: 47px;
   background-color: white;
   border: solid 1px #025A4D;
-  top: 7px;
   left: 8px;
 }
 
@@ -389,8 +388,6 @@ a, button {
   width: 100%;
 }
 .article5 .information {
-  width: 95%;
-  padding: 5%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: grid;
@@ -398,6 +395,7 @@ a, button {
 }
 .article5 .information .buttons {
   display: flex;
+  gap: 10%;
   position: relative;
 }
 .article5 .information .buttons .btn-information {
@@ -408,7 +406,6 @@ a, button {
   height: 100%;
 }
 .article5 .information .buttons .btn-information .btn {
-  font-size: 1.25vw;
   font-weight: bold;
   height: 100%;
   width: 100%;
@@ -429,22 +426,14 @@ a, button {
   left: 7px;
   background-color: rgba(0, 0, 0, 0);
 }
-.article5 .information .buttons #go-below {
-  left: 50%;
-}
 .article5 .information .buttons #go-below .btn {
   background-color: white;
 }
 
-.article6 {
-  padding: 150px 15%;
-}
 .article6 .team {
-  background-image: url("../../img/homePage/article 6/Background.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   text-align: center;
-  padding: 60px 5% 100px 5%;
   position: relative;
 }
 .article6 .team .rectangle-background {
@@ -458,10 +447,6 @@ a, button {
 }
 .article6 .team .team-members {
   margin-top: 40px;
-  display: grid;
-  grid-template-columns: 30% 36% 32%;
-  grid-gap: 3%;
-  justify-content: center;
 }
 .article6 .team .team-members .column {
   display: grid;
@@ -682,7 +667,8 @@ a, button {
     padding: 9px 40px 14px 40px;
   }
   .article1 .rightPart .square {
-    width: 111px;
+    width: 112px;
+    top: -6px;
   }
 }
 @media all and (max-width: 1150px) {
@@ -691,13 +677,10 @@ a, button {
   }
   .article1 .rightPart .square {
     width: 71px;
+    top: -10px;
   }
 }
 @media all and (min-width: 801px) {
-  .desktop-hidden {
-    display: none;
-  }
-
   p {
     font-size: 18px;
     font-size: 1.25vw;
@@ -813,15 +796,30 @@ a, button {
     font-size: 1.25vw;
   }
   .article5 .information {
+    width: 95%;
+    padding: 5%;
     grid-template-columns: 55% 35%;
     background-image: url("../../img/homePage/article 5/Background.png");
   }
-}
-@media all and (max-width: 800px) {
-  .mobile-hidden {
-    display: none;
+  .article5 .information .btn {
+    font-size: 1.25vw;
   }
 
+  .article6 {
+    padding: 150px 15%;
+  }
+  .article6 .team {
+    padding: 60px 5% 100px 5%;
+    background-image: url("../../img/homePage/article 6/Background.png");
+  }
+  .article6 .team .team-members {
+    display: grid;
+    grid-template-columns: 30% 36% 32%;
+    grid-gap: 3%;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 800px) {
   p {
     font-size: 18px;
   }
@@ -871,6 +869,10 @@ a, button {
   }
   .article1 .rightPart .musicDescription .input-eth input {
     width: 70%;
+  }
+  .article1 .rightPart .musicDescription .input-eth .btn-bid .square {
+    top: -5px;
+    width: 72px;
   }
   .article1 .circle {
     top: -50px;
@@ -1048,9 +1050,115 @@ a, button {
   .article5 .information {
     grid-template-rows: 1fr 1fr;
     background-image: url("../../img/homePage/article 5/Background Mobile.png");
+    padding: 33px 10%;
+    width: 80%;
+  }
+  .article5 .information p {
+    height: 96px;
   }
   .article5 .information .buttons {
     flex-direction: column;
+    padding-top: 10px;
+  }
+  .article5 .information .buttons .btn-information {
+    position: relative;
+    font-size: 18px;
+    top: 0;
+    width: 100%;
+    height: 46px;
+  }
+  .article5 .information .buttons #go-below {
+    top: 35px;
+  }
+
+  .article6 {
+    margin-top: 120px;
+  }
+  .article6 .team {
+    padding: 60px 0 100px 0;
+  }
+  .article6 .team::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/homePage/article 6/Background Mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0 10%;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 81%;
+  }
+  .article6 .team::after {
+    content: "";
+    position: absolute;
+    width: 71%;
+    height: 62%;
+    left: 15%;
+    top: 16%;
+    z-index: -1;
+    background-color: white;
+  }
+  .article6 .team h1 {
+    padding: 0px 27%;
+    height: 92px;
+  }
+  .article6 .team .slider {
+    width: 100%;
+    overflow: scroll;
+    height: 500px;
+    margin-top: 50px;
+  }
+  .article6 .team .slider .slides {
+    display: flex;
+    height: 100%;
+  }
+  .article6 .team .slider .slides figure {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+  }
+  .article6 .team .slider .slides figure img {
+    padding: 0 10px;
+    width: 260px;
+    height: 325px;
+    transition: 0.3s;
+    bottom: 0;
+    object-fit: cover;
+  }
+  .article6 .team .slider .slides figure:hover img {
+    transition: 0.3s;
+    height: 400px;
+  }
+  .article6 .team .slider .slides figure:hover .parent-member-information {
+    transition: 0.8s;
+    visibility: visible;
+    opacity: 1;
+  }
+  .article6 .team .slider .slides figure .parent-member-information {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    padding: 0 8%;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .article6 .team .slider .slides figure .parent-member-information .member-information {
+    text-align: left;
+    background-color: #F6E53B;
+    border: solid 1px #025A4D;
+    padding: 22px 15px;
+    height: 50%;
+  }
+  .article6 .team .slider .slides figure .parent-member-information .member-information .name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .article6 .team .slider .slides figure .parent-member-information .member-information .description {
+    font-size: 16px;
+    line-height: 25px;
   }
 }
 
