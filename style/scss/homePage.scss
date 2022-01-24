@@ -11,7 +11,6 @@
 
 section {
     padding-top: 80px;
-    padding-bottom: 41px;
     color : #025A4D;
     font-family: "Roboto Mono";
 }
@@ -605,17 +604,39 @@ a,button {
 
 .article7 {
     background-color: white;
-    padding-bottom: 300px;
     .our-mission {
-        img {
-            background-image: url("../../img/homePage/article 7/Background.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
+        position: relative;
+        .our-value {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 74%;
+                width: 66%;
+                left: 17%;
+                bottom: 0;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            h2 {
+                position: absolute;
+                font-family: "GT Super";
+                font-weight: bold;
+            }
+            .our-mission-text {
+                color: #025A4D;
+            }
+            .our-value-text {
+                color: #F6E53B;
+            }
+            img {
+                width: 100%;
+            }
         }
         
         p {
             font-size: 18px;
-            font-size: 1.250vw;
             color: black;
             padding: 150px 19%;
             text-align: center;
@@ -623,22 +644,17 @@ a,button {
     }
 
     .list-mission {
-        height: 18vh;
-        display: grid;
-        grid-template-columns: repeat(5, 10%);
-        grid-gap: 5%;
-        justify-content: center;
+        display: flex;
 
         .btn-mission {
             @extend .btn-3D;
             position: relative;
+            aspect-ratio: 1/1.25;
 
             .btn {
                 width: 100%;
                 height: 100%;
                 font-weight: bold;
-                font-size: 18px;
-                font-size: 1.250vw;
                 text-align: left;
                 padding: 10%;
 
@@ -650,6 +666,7 @@ a,button {
             .square {
                 width: calc(100% - 3px);
                 height: calc(100% - 1px);
+                top: 7px;
             }
         }
        
@@ -659,28 +676,10 @@ a,button {
 .article8 {
     background-color: #025A4D;
     color: white;
-    padding: 0 22% 300px 22%;
-
-    .earth {
-        width: 50%;
-        margin: 0 25%;
-        position: relative;
-        bottom : 130px;
-    }
-    .text {
-        font-size: 30px; 
-        font-size: 2.083vw;
-        font-weight: bold;
-    }
-    .line {
-        width: 50%;
-        padding: 70px 0 40px 0;
-    }
 
 }
 
 .article9 {
-    padding: 150px 19% 0 19%;
 
     h1 {
         padding-bottom: 30px;
@@ -689,7 +688,7 @@ a,button {
         padding-bottom: 70px;
         .subject{
             font-weight: bold;
-            padding: 25px 0;
+
             display: inline-block;
         }
         
@@ -708,7 +707,6 @@ a,button {
 
     .links {
         justify-content: center;
-        display: flex;
         padding: 0 30%;
         height: 10%;
         a{
@@ -730,14 +728,14 @@ a,button {
 
 .copyright {
     text-align: center; 
-    background-image: url("../../img/homePage/article 9/Background.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 41vh;
+    // background-image: url("../../img/homePage/article 9/Background.png");
+    // background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    // height: 41vh;
     font-weight: bold;
     p {
-        position: relative;
-        top: 40%;
+        // position: relative;
+        // top: 40%;
     }
 }
 @media all and (min-width : 1151px) {
@@ -771,6 +769,10 @@ a,button {
     p {
         font-size: 18px;
         font-size: 1.250vw;
+    }
+
+    section {
+        padding-bottom: 41px;
     }
 
     .article1 {
@@ -921,8 +923,88 @@ a,button {
                 justify-content: center;
             }
         }
-        .rectangle-background {
+    }
 
+    .article7 {
+        padding: 100px 0 300px 0;
+        .our-mission {
+            font-size: 1.250vw;
+
+            .our-value {
+                background-image: url("../../img/homePage/article 7/Background.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding: 0 11%;
+                width: 78%;
+                background-position-y:14vw ;
+                &::before {
+                    background-image: url("../../img/homePage/article 7/Background image.png");
+                    left: 15%;
+                    width: 70%;
+                }
+                h2 {
+                    font-size:9.75vw ;
+                    text-shadow: .5vw .25vw rgb(150, 150, 150, .2);
+                }
+                .our-mission-text {
+                    left: 12%;
+                    top: 32%;
+                }
+                .our-value-text {
+                    right: 10%;
+                    bottom: 0;
+                }
+            }
+            p {
+                font-size: 1.25vw;
+            }
+        }
+        .list-mission {
+            justify-content: center;
+            gap: 5%;
+            height: 12vw;
+            .btn-mission {
+                .btn {
+                    font-size: 1.25vw;
+                }
+            }
+            
+        }
+    }
+
+    .article8 {
+        padding: 0 22% 300px 22%;
+
+        .earth {
+            width: 50%;
+            margin: 0 25%;
+            position: relative;
+            bottom : 45px;
+        }
+        .text {
+            font-size: 30px; 
+            font-size: 2.083vw;
+            font-weight: 500;
+        }
+        .informations {
+            font-weight: 200;
+        }
+        .line {
+            width: 50%;
+            padding: 70px 0 40px 0;
+        }
+    }
+
+    .article9 {
+        padding: 150px 19% 0 19%;
+
+        .faq {
+            .subject {
+                padding: 25px 0;
+            }
+        }
+        .links {
+            display: flex;
         }
     }
 }
@@ -931,6 +1013,10 @@ a,button {
     
     p {
         font-size: 18px;
+    }
+
+    section {
+        padding-bottom: 80px;
     }
 
     .article1 {
@@ -1131,7 +1217,7 @@ a,button {
             .slider {
                 position: relative;
                 width: 100%;
-                overflow: hidden;
+                overflow: scroll;
                 height: 350px;
                 .slides {
                     background: white;
@@ -1141,7 +1227,6 @@ a,button {
                     left: 0;
                     display: flex;
                     height: 60%;
-                    transform: translateX(-380px);
                     figure {
                         display: inline-block;
                         height: 100%;
@@ -1202,7 +1287,7 @@ a,button {
     }
 
     .article6 {
-        margin-top: 120px;
+        margin: 120px 0 50px 0;
         .team {
             padding: 60px 0 100px 0;
 
@@ -1229,10 +1314,6 @@ a,button {
                 z-index: -1;
                 background-color: white;
             }
-            .rectangle-background {
-            
-            }
-
             
             h1 {
                 padding: 0px 27%;
@@ -1301,6 +1382,152 @@ a,button {
                 }
             }
 
+        }
+    }
+
+    .article7 {
+        padding-bottom: 300px;
+        .our-mission {
+            .our-value {
+                position: relative;
+                bottom: 9.6vw;
+                padding: 0;
+                width: 100%;
+                &>* {
+                    
+                }
+                &::before {
+                    background-image: url("../../img/homePage/article 7/Background Mobile.png");
+                    height: 53%;
+                    left: 8%;
+                    width: 84%;
+                    bottom: 5%;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 171%;
+                    background-image: url("../../img/homePage/article 7/Background.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position-x: -127vw;
+                    left: 0;
+                    top: 0;
+                    z-index: 1;
+                }
+                .our-mission-text {
+                    bottom: 35%;
+                    font-size: 14.13vw;
+                    left: 11%;
+                    z-index: 5;
+                }
+                .our-value-text {
+                    bottom: 10%;
+                    font-size: 19.46vw;
+                    right: 1%;
+                    z-index: 5;
+                }
+                img {
+                    z-index: 4;
+                    position: relative;
+                }
+            }
+            p {
+                padding: 10px 8% 70px 8%;
+                line-height: 28px;
+            }
+        }
+
+        .slider {
+            overflow: scroll;
+            padding : 6% 0;
+            .list-mission {
+                gap: 10%;
+                height: 200px;
+                .btn {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .article8 {
+        padding: 0 8% 50px 8%;
+        position: relative;
+
+        .earth {
+            position: absolute;
+            top: -3%;
+            aspect-ratio: 411/307;
+            width: 300px ;
+            left: calc(50% - 150px);
+        }
+        .text {
+            padding-top: 250px;
+
+            &>* {
+                padding-bottom: 30px;
+                line-height: 30px;
+            }
+            .p1 {
+                font-weight: 200;
+            }
+            .p2 {
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 40px;
+            }
+            .p3 {
+                font-weight: 200;
+            }
+            .p4 {
+                font-style: italic;
+                font-weight: 200;
+            }
+            .line {
+                position: relative;
+                right: -9%;
+                float: right;
+                width: 109%;
+            }
+        }
+    }
+    .article9 {
+        padding: 50px 8%;
+
+        .subject {
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .copyright {
+        position: relative;
+        overflow: hidden;
+        height: 280px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("../../img/homePage/article 9/Background.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: 0;
+            bottom: 0;
+            z-index: -5;
+            transform: scale(1.4);
+            background-position-x: -229px;
+        }
+
+        .links {
+            padding-bottom: 90px;
+            padding-top: 90px;
+        }
+        p {
+            font-size: 16px;
         }
     }
 }

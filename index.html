@@ -321,7 +321,7 @@
     <article class="article6">
         <div class="team">
             <h1>This is the Team</h1>
-            <div class="rectangle-background"></div> 
+            <div class="rectangle-background mobile-hidden"></div> 
             <div class="background-mobile desktop-hidden"></div>  
             <div class="team-members mobile-hidden">
                 <div class="column">
@@ -653,65 +653,85 @@
         </div>
     </article>
 
-    <!-- <script>
-        function changeLineHeight(el){
-            var membersdescription = document.querySelectorAll(".member .description")
-        
-            membersdescription.forEach((value, index) => {
-                var height =  value.offsetHeight / (100 - 92)
-                value.style.lineHeight = height.toString() + "px"
-            })
-        }
-    </script> -->
-
     <article class="article7">
         <div class="our-mission">
-            <img/>
-            <p>We draw inspiration from many sources and from many inspiring beings around the globe, who use 
+            <div class="our-value">
+                <h2 class="our-mission-text">Our mission</h2>
+                <h2 class="our-value-text">& values</h2>
+                <img class="mobile-hidden" src="img/homePage/article 7/image1.png" alt="our value">
+                <img class="desktop-hidden" src="img/homePage/article 7/image2.png" alt="our value">
+            </div>
+            <p class="mobile-hidden">We draw inspiration from many sources and from many inspiring beings around the globe, who use 
                 their time here enjoying the precious gift of life and at the same time protecting the more-than-human world. 
             </p>
+            <p class="desktop-hidden"> 
+                You'll be asked a few questions about yourself. You'll then be presented with a set of 20 choices - 
+                each with two options. The options may not always feel relevant to each other and it might not always be easy 
+                to make a decision, but try to decide which of these two options you would prefer in London's future.
+            </p>
         </div>
-        <div class="list-mission">
-            <div class="btn-mission">
-                <label class="square"></label>
-                <button class="btn" >REVERENCE FOR LIFE</button> 
-            </div>
-            <div class="btn-mission">
-                <label class="square"></label>
-                <button class="btn" > TRUE HAPINESS </button> 
-            </div>
-            <div class="btn-mission">
-                <label class="square"></label>
-                <button class="btn" > TRUE LOVE </button> 
-            </div>
-            <div class="btn-mission">
-                <label class="square"></label>
-                <button class="btn" > DEEP LISTENING </button> 
-            </div>
-            <div class="btn-mission">
-                <label class="square"></label>
-                <button class="btn" > NOURISHMENT AND HEALING </button> 
+        <div class="slider">
+            <div class="list-mission">
+                <div class="btn-mission">
+                    <label class="square"></label>
+                    <button class="btn" >REVERENCE FOR LIFE</button> 
+                </div>
+                <div class="btn-mission">
+                    <label class="square"></label>
+                    <button class="btn" > TRUE HAPPINESS </button> 
+                </div>
+                <div class="btn-mission">
+                    <label class="square"></label>
+                    <button class="btn" > TRUE LOVE </button> 
+                </div>
+                <div class="btn-mission">
+                    <label class="square"></label>
+                    <button class="btn" > DEEP LISTENING </button> 
+                </div>
+                <div class="btn-mission">
+                    <label class="square"></label>
+                    <button class="btn" > NOURISHMENT AND HEALING </button> 
+                </div>
             </div>
         </div>
     </article>
 
     <article class="article8">
         <img class="earth" src="img/homePage/article 8/Earth.png" alt="earth" />
-        <p class="text">“An <u>Earth Holder*</u> works to preserve this planet for living 
-            beings by taking care of the air, water, and soil.”
-        </p>
-        <img class="line" src="img/homePage/article 8/Line.png" alt="Line"/>
-        <p class="informations">
-            <i>*The Bodhisattva Dharanimdhara - an enlightened being from ancient 
-            Buddhist texts — is translated by Zen Master Thich Nhat Hanh in his book
-            “The World We Have” to be the <u>Earth Holder</u>. </i>
-        </p>
+        <div class="mobile-hidden">
+            <p class="text">“An <u>Earth Holder*</u> works to preserve this planet for living 
+                beings by taking care of the air, water, and soil.”
+            </p>
+            <img class="line" src="img/homePage/article 8/Line.png" alt="Line"/>
+            <p class="informations">
+                <i>*The Bodhisattva Dharanimdhara - an enlightened being from ancient 
+                Buddhist texts — is translated by Zen Master Thich Nhat Hanh in his book
+                “The World We Have” to be the <u>Earth Holder</u>. </i>
+            </p>
+        </div>
+        <div class="desktop-hidden">
+            <div class="text">
+                <p class="p1">The Bodhisattva Dharanimdhara - an enlightened being from ancient Buddhist texts — 
+                    is translated by Zen Master Thich Nhat Hanh to be the “Earth Holder.” <br><br>
+    
+                    He goes on to explain:
+                </p>
+                <p class="p2">
+                    This Bodhisattva helps further communication between humans and other species… Earth 
+                    Holder works to preserve this planet for liv...
+                </p>
+                <p class="p3"><u>See more</u></p>
+                <img class="line" src="img/homePage/article 8/Line Mobile.png" alt="Line"/>
+                <p class="p4">Thich Nhat Hanh,<br>The World We Have</p>
+            </div>
+        </div>
+        
     </article>
 
     <article class="article9">
         <h1>Frequently asked questions</h1>
 
-        <div class="faq">
+        <div class="faq mobile-hidden">
             <div class="question">
                 <p class="subject">How does it work ?</p>
                 <img class="chevron" src="img/homePage/article 9/Chevron Up.png" alt="chevron Up" />
@@ -756,7 +776,50 @@
             </div>
         </div>
 
-        <div class="links">
+        <div class="faq desktop-hidden">
+            <div class="question">
+                <p class="subject">What is earth.fm ?</p>
+                <img class="chevron" src="img/homePage/article 9/Chevron Up.png" alt="chevron Up" />
+                <p class="response">
+                    Earth.fm is an experimental attempt to improve the formation of on-chain avatar 
+                    communities. While projects such as Cryptopunks have atempted to oostrap digital community 
+                    and identtity, Nouns attemp to bootstrap identity, community, governance and a treasury 
+                    that can be used by the community.
+                </p>
+                <img class="line" src="img/homePage/article 9/Line1.png" alt="Line1" />
+            </div>
+            <div class="question">
+                <p class="subject">Daily actions</p>
+                <img class="chevron" src="img/homePage/article 9/Chevron Down.png" alt="chevron Down" />
+                <img class="line" src="img/homePage/article 9/Line2.png" alt="Line2" />
+            </div>
+            <div class="question">
+                <p class="subject">Governance</p>
+                <img class="chevron" src="img/homePage/article 9/Chevron Down.png" alt="chevron Down" />
+                <img class="line" src="img/homePage/article 9/Line3.png" alt="Line3" />
+            </div>
+            <div class="question">
+                <p class="subject">Traits</p>
+                <img class="chevron" src="img/homePage/article 9/Chevron Down.png" alt="chevron Down" />
+                <img class="line" src="img/homePage/article 9/Line4.png" alt="Line4" />
+            </div>
+            <div class="question">
+                <p class="subject">On-chain Artwork</p>
+                <img class="chevron" src="img/homePage/article 9/Chevron Down.png" alt="chevron Down" />
+                <img class="line" src="img/homePage/article 9/Line5.png" alt="Line5" />
+            </div>
+            <div class="question">
+                <p class="subject">Earth-seeder contract</p>
+                <img class="chevron" src="img/homePage/article 9/Chevron Down.png" alt="chevron Down" />
+                <img class="line" src="img/homePage/article 9/Line6.png" alt="Line6" />
+            </div>
+            <div class="question">
+                <p class="subject">Earth-holders rewards</p>
+                <img class="chevron" src="img/homePage/article 9/Chevron Down.png" alt="chevron Down" />
+            </div>
+        </div>
+
+        <div class="links mobile-hidden">
             <a href=""><img class="link" src="img/homePage/article 9/Twitter.png" alt="Twitter"/></a>
             <a href=""><img class="link" src="img/homePage/article 9/Discord.png" alt="Discord"/></a>
             <a href=""><img class="link" src="img/homePage/article 9/Discourse Black.png" alt="Discourse Black"/></a>
@@ -765,6 +828,12 @@
     </article>
 
     <div class="copyright">
+        <div class="links desktop-hidden">
+            <a href=""><img class="link" src="img/homePage/article 9/Twitter.png" alt="Twitter"/></a>
+            <a href=""><img class="link" src="img/homePage/article 9/Discord.png" alt="Discord"/></a>
+            <a href=""><img class="link" src="img/homePage/article 9/Discourse Black.png" alt="Discourse Black"/></a>
+            <a href=""><img class="link" src="img/homePage/article 9/Etherscan.png" alt="Etherscan"/></a>
+        </div>
         <p>earth.fm</p>
     </div>
     
