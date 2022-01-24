@@ -1,12 +1,3 @@
-@font-face {
-  font-family: "GT Super";
-  src: url("../../fonts/Grilli-Type/GT-Super-Display-Light.woff2") format("woff2");
-}
-@font-face {
-  font-family: "GT Super";
-  src: url("../../fonts/Grilli-Type/GT-Super-Display-Bold.woff2") format("woff2");
-  font-weight: bold;
-}
 section {
   padding-top: 80px;
   color: #025A4D;
@@ -107,10 +98,12 @@ a, button {
   font-size: 15px;
   display: flex;
 }
-.article1 .rightPart > img {
+.article1 .rightPart .rightPartImage {
+  aspect-ratio: 1/1;
+}
+.article1 .rightPart .rightPartImage > img {
+  padding: 8px;
   background-color: white;
-  padding: 10px;
-  object-fit: cover;
 }
 .article1 .rightPart .musicDescription {
   position: relative;
@@ -356,15 +349,14 @@ a, button {
   bottom: 140px;
 }
 .article4 .music-and-notes .lstMusic {
-  overflow-x: clip;
+  overflow: hidden;
   background-color: white;
+  height: 250px;
 }
 .article4 .music-and-notes .lstMusic img {
   position: relative;
-  width: 13%;
-  min-width: 170px;
-  height: 20.63vh;
-  padding: 20px;
+  aspect-ratio: 1/1;
+  padding: 15px;
   transition: 0.4s;
   top: 0;
 }
@@ -650,6 +642,7 @@ a, button {
   text-align: center;
   font-weight: bold;
 }
+
 @media all and (min-width: 1151px) {
   .article1 .rightPart .btn {
     padding: 9px 40px 14px 40px;
@@ -690,8 +683,14 @@ a, button {
     font-size: 1vw;
     padding: 20px;
   }
-  .article1 .rightPart > img {
+  .article1 .rightPart .rightPartImage {
+    aspect-ratio: 1/1;
     width: 50%;
+  }
+  .article1 .rightPart .rightPartImage > img {
+    width: 100%;
+    padding: 8px;
+    background-color: white;
   }
   .article1 .rightPart .circle {
     right: -20%;
@@ -885,6 +884,19 @@ a, button {
   .article9 .links {
     display: flex;
   }
+
+  .copyright {
+    text-align: center;
+    background-image: url("../../img/homePage/article 9/Background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 41vh;
+    font-weight: bold;
+  }
+  .copyright p {
+    position: relative;
+    top: 40%;
+  }
 }
 @media all and (max-width: 800px) {
   p {
@@ -907,9 +919,9 @@ a, button {
     padding: 0;
     flex-direction: column;
   }
-  .article1 .rightPart > img {
+  .article1 .rightPart .rightPartImage img {
     display: block;
-    width: calc(100% - 20px);
+    width: calc(100% - 16px);
   }
   .article1 .rightPart .musicDescription {
     padding-top: 20px;

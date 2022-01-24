@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth.fm</title>
+    <link rel="stylesheet" type="text/css" href="../style/css/index.css">
+    <link rel="stylesheet" type="text/css" href="../style/css/submit-sound.css">
+    <link href="/header.html" rel="import" />
+    <script type="text/javascript" src="../js/index.js"></script>
+
+</head>
+<body>
+    
+    <header>
+        <div class="rowHeader">
+            <div class="home">
+                <div class="underline" id="homeHeader">
+                    <a class="tab" href="">earth.fm</a>
+                </div>  
+            </div> 
+            <div class="list-header">
+                <span></span>
+            </div>
+            <div id="overlay"></div>
+            <div class="tabs">
+                <div class="leftSide">
+
+                    <div class="underline">
+                        <a class="tab" href="">About</a>
+                    </div>    
+    
+                    <div class="underline">
+                        <a class="tab" href="">Blog</a>
+                    </div>    
+    
+                    <div class="underline">
+                        <a class="tab" href="">Contact</a>
+                    </div>    
+    
+                </div>
+                
+                <div class="rightSide">
+                    <div class="underline">
+                        <a class="tab" href="">Connect</a>
+                    </div>
+                    <div class="underline">
+                        <a class="tab" href="">Wallet</a>
+                    </div>
+                </div>
+            </div> 
+            
+        </div>
+    </header>
+
+    <section>
+        <div class="article">
+            <img class="image" src="../img/submit-sound/Image1.png" alt="image nature"/>
+            <div class="submit-sound">
+                <h1>Submit your Sound</h1>
+
+                <form class="form" action="">
+                    <div class="name-lastName">
+                        <div class="name">
+                            <label for="name">Name</label>
+                            <input class="input" type="text" name="name" required>
+                        </div>
+                        <div class="last-name">
+                            <label for="last-name">Last Name</label>
+                            <input class="input" type="text" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input class="input" type="text" name="email" required>
+                    </div>
+                    <div class="sound">
+                        <label id="label-text">Your sound</label>
+                        <label id="icon" for="sound"><img src="../img/submit-sound/Import.png"/> <span>Add your song</span></label>
+                        <input type="file" id="sound" name="sound" required>
+                    </div>
+                    <div class="button">
+                        <button type="submit">SUBMIT</button>
+                        <div class="square"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

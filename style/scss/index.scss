@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap');
 
+@font-face {
+    font-family: "GT Super";
+    src: url("../../fonts/Grilli-Type/GT-Super-Display-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "GT Super";
+    src: url("../../fonts/Grilli-Type/GT-Super-Display-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
 * {
     margin:0;
     padding : 0;
@@ -8,6 +19,13 @@
 
 body {
     background-color: #FFF5F2;
+}
+
+h1 {
+    font-size: 71px;
+    font-size: 4.931vw;
+    font-family: "GT Super";
+    text-align: center;
 }
 
 header {
@@ -58,14 +76,6 @@ header {
         }
     }
 }
-
-h1 {
-    font-size: 71px;
-    font-size: 4.931vw;
-    font-family: "GT Super";
-    text-align: center;
-}
-
 
 footer {
     position: fixed;
