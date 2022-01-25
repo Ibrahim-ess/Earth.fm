@@ -39,7 +39,7 @@ section {
 .article .submit-sound .form input {
   margin-top: 10px;
   height: 45px;
-  width: 100%;
+  width: calc(100% - 10px);
   border: solid 1px #025A4D;
   color: #025A4D;
   font-family: "Roboto Mono";
@@ -102,29 +102,29 @@ section {
   content: "";
   position: absolute;
   width: calc(100% - 2px);
-  height: 7px;
+  height: 5px;
   border: solid 1px #025A4D;
   transform: skewX(45deg);
-  bottom: -8px;
-  left: 4px;
+  bottom: -6px;
+  left: 3px;
 }
 .article .submit-sound .form .button button::after {
   content: "";
   position: absolute;
-  width: 7px;
+  width: 5px;
   height: 95%;
   border: solid 1px #025A4D;
   transform: skewY(45deg);
-  right: -8px;
-  top: 4px;
+  right: -6px;
+  top: 3px;
 }
 .article .submit-sound .form .button button:hover {
   cursor: pointer;
 }
 .article .submit-sound .form .button .square {
   position: absolute;
-  width: 100%;
-  height: 98%;
+  width: 99%;
+  height: 94%;
   border: solid 1px #025A4D;
   left: 6px;
   top: 7px;
