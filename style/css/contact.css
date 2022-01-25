@@ -5,9 +5,28 @@ section {
 
 .article {
   display: flex;
+  /* Page confirmation contact */
+  /* END Confirmaiton */
 }
 .article .contact-us {
   position: relative;
+}
+.article #confirmation-image .image {
+  position: relative;
+}
+.article .contact-validation {
+  margin: auto 0;
+  width: 25%;
+}
+.article .contact-validation h2 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.article .contact-validation .confirmation {
+  font-weight: 400;
+  padding-bottom: 70px;
+  line-height: 30px;
 }
 .article .form-contact {
   top: 0;
@@ -121,6 +140,11 @@ section {
     margin: 90px 7% 0 7%;
     padding: 0 6% 20px 6%;
   }
+  section .article .contact-validation {
+    padding: 5%;
+    margin: auto 0;
+    width: 25%;
+  }
   section .article .contact-us {
     width: 60%;
   }
@@ -182,6 +206,11 @@ section {
     background-image: url("../../img/contact/Background Line Mobile.png");
     background-repeat: no-repeat;
     background-size: 100% 96%;
+  }
+  section .article .contact-validation {
+    margin: 0 auto 70px auto;
+    width: 85%;
+    text-align: center;
   }
   section .article .contact-us .image {
     position: relative;

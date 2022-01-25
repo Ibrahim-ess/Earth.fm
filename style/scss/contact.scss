@@ -11,6 +11,30 @@ section {
         position: relative;
     }
 
+    /* Page confirmation contact */ 
+
+    #confirmation-image {
+        .image {
+            position: relative;
+        }
+    }
+    .contact-validation {
+        margin: auto 0;
+        width: 25%;
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            padding-bottom: 20px;
+        }
+        .confirmation {
+            font-weight: 400;
+            padding-bottom: 70px;
+            line-height: 30px;
+        }
+    }
+
+    /* END Confirmaiton */
+
     .form-contact {
         top: 0;
         left: 0;
@@ -138,6 +162,12 @@ section {
             margin: 90px 7% 0 7%;
             padding: 0 6% 20px 6%;
 
+            .contact-validation {
+                padding: 5%;
+                margin: auto 0;
+                width: 25%;
+            }
+
             .contact-us {
                 width: 60%;
                 .image {
@@ -212,6 +242,12 @@ section {
             background-image: url("../../img/contact/Background Line Mobile.png");
             background-repeat: no-repeat ;
             background-size: 100% 96%;
+
+            .contact-validation {
+                margin: 0 auto 70px auto;
+                width: 85%;
+                text-align: center;
+            }
 
             .contact-us {
                 .image {
