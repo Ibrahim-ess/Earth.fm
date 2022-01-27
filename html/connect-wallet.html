@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth.fm</title>
+    <link rel="stylesheet" type="text/css" href="../style/css/index.css">
+    <link rel="stylesheet" type="text/css" href="../style/css/connect-wallet.css">
+    <link href="/header.html" rel="import" />
+    <script type="text/javascript">
+        window.onload = () => {
+            var wallets = document.querySelector(".wallets")
+            console.log(document.querySelector(".wallets"))
+            wallets.scrollLeft=270
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <div class="article">
+            <button><img class="cross" src="../img/connect-wallet/Cross.png" alt="cross" /></button>
+            <h1>Connect your wallet</h1>
+            <div class="wallets">
+                <div class="wallet">
+                    <div class="square"></div>
+                    <button class="btn" style="color:#F6851B"><img src="../img/connect-wallet/metamask.png"/> <p>Metamask</p></button>
+                </div>
+                <div class="wallet">
+                    <div class="square"></div>
+                    <button class="btn" style="color:#6851FF"><img src="../img/connect-wallet/formatic.png"/> <p>Formatik</p></button>
+                </div>
+                <div class="wallet">
+                    <div class="square"></div>
+                    <button class="btn" style="color:#3B99FC"><img src="../img/connect-wallet/wallet-connect.png"/> <p>Wallet Connect</p></button>
+                </div>
+                <div class="wallet">
+                    <div class="square"></div>
+                    <button class="btn" style="color:#0455FF"><img src="../img/connect-wallet/coinbase-logo 1.png"/> <p>Coinbase Wallet</p></button>
+                </div>
+                <div class="wallet">
+                    <div class="square"></div>
+                    <button class="btn" style="color:#FF3600"><img src="../img/connect-wallet/brave-logo 1.png"/> <p>Brave</p></button>
+                </div>
+                <div class="wallet">
+                    <div class="square"></div>
+                    <button class="btn" style="color:black"><img src="../img/connect-wallet/trezor.png"/> <p>Trezor</p></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer >
+        <img id="musicImg" src="../img/homePage/article 1/art 5.png" alt="musicImg"/>
+        <img class="mobile-hidden" src="../img/homePage/article 1/Play.png" alt="Play Image"/>
+        <div class="progressEpisode">
+            <div class="parent-hide-text">
+                <div class="fadeout"></div>
+                <p >Episode 1 - peaceful morning with birds </p>
+            </div>
+            <div class="progress desktop-hidden">
+                <div class="progress-line">
+                    <div class="cursor">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img class="mobile-hidden" id="option" src="../img/homePage/article 1/Group 12.png" alt="Options Image"/>
+        <img class="mobile-hidden" src="../img/homePage/article 1/Repeat.png" alt="Repeat Image"/>
+        <img class="mobile-hidden" src="../img/homePage/article 1/Backward.png" alt="Backward Image"/>
+        <p class="mobile-hidden">30s</p>
+        <img class="mobile-hidden" src="../img/homePage/article 1/Forward.png" alt="Forward Image"/>
+        <p class="mobile-hidden">07:11</p>
+        <div class="progress mobile-hidden">
+            <div class="progress-line">
+                <div class="cursor">
+                    
+                </div>
+            </div>
+        </div>
+        <p class="mobile-hidden">-29/50</p>
+        <img class="mobile-hidden" src="../img/homePage/article 1/Volume.png" alt="Volume Image"/>
+        <img class="desktop-hidden" src="../img/homePage/article 1/Pause.png" alt="Pause Image"/>
+        <img src="../img/homePage/article 1/Audio Library.png" alt="Audio Library Image"/>
+    </footer>
+</body>
+</html>

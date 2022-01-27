@@ -1,0 +1,224 @@
+body {
+  height: 100vh;
+}
+
+section {
+  height: calc(93% - 4.23vh);
+}
+section .article {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+section .article .cross {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transition: 0.3s;
+}
+section .article .cross:hover {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  transition: 0.3s;
+}
+section .article .wallets {
+  display: flex;
+}
+section .article .wallets .wallet {
+  aspect-ratio: 1/1.2;
+  position: relative;
+}
+section .article .wallets .wallet .btn {
+  background-color: white;
+  border: solid 1px #025A4D;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20%;
+  transition: 0.4s;
+}
+section .article .wallets .wallet .btn p {
+  font-weight: 700;
+}
+section .article .wallets .wallet .btn img {
+  height: 50%;
+  transition: 0.4s;
+}
+section .article .wallets .wallet .btn::before {
+  content: "";
+  position: absolute;
+  border: solid 1px #025A4D;
+  transform: skewX(45deg);
+  bottom: -6px;
+}
+section .article .wallets .wallet .btn::after {
+  content: "";
+  position: absolute;
+  border: solid 1px #025A4D;
+  transform: skewY(45deg);
+  top: 3px;
+}
+section .article .wallets .wallet .btn:hover {
+  cursor: pointer;
+  gap: 20%;
+  transition: 0.4s;
+}
+section .article .wallets .wallet .btn:hover img {
+  height: 60%;
+}
+section .article .wallets .wallet .square {
+  position: absolute;
+  border: solid 1px #025A4D;
+  top: 7px;
+  z-index: -1;
+}
+
+@media all and (min-width: 801px) and (max-width: 1150px) {
+  .article {
+    height: 73% !important;
+  }
+
+  .btn::before {
+    width: calc(100% - 2px);
+    height: 5px;
+  }
+  .btn::after {
+    width: 5px !important;
+    height: 97% !important;
+  }
+  .btn:hover {
+    cursor: pointer;
+  }
+
+  .square {
+    width: 99% !important;
+    height: calc(98% - 1px) !important;
+  }
+}
+@media all and (min-width: 801px) {
+  section {
+    padding: 2%;
+    width: 96%;
+  }
+}
+@media all and (min-width: 801px) {
+  .article {
+    background-image: url("../../img/connect-wallet/Background Line.png");
+    width: 90%;
+    height: 65%;
+    padding: 11% 5% 8% 5%;
+  }
+  .article .cross {
+    top: 1%;
+    right: 1%;
+  }
+  .article h1 {
+    padding-bottom: 100px;
+  }
+  .article .wallets {
+    height: 12.5vw;
+    justify-content: center;
+    gap: 2%;
+  }
+  .article .wallets .wallet p {
+    font-size: 1.25vw !important;
+    font-size: 18px;
+    height: 30%;
+  }
+  .article .wallets .wallet .btn {
+    padding: 20% 20% 7% 20%;
+  }
+  .article .wallets .wallet .btn::before {
+    width: calc(100% - 2px);
+    height: 5px;
+    left: 3px;
+  }
+  .article .wallets .wallet .btn::after {
+    width: 5px;
+    height: 99%;
+    right: -6px;
+  }
+  .article .wallets .wallet .square {
+    width: calc(99% + 0.5px);
+    height: calc(98% + 0.5px);
+    left: 5px;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 550px) {
+  .article {
+    height: 77% !important;
+  }
+}
+@media all and (max-width: 800px) {
+  section {
+    padding: 6% 0;
+    width: 100%;
+  }
+}
+@media all and (max-width: 800px) {
+  .article {
+    width: 100%;
+    height: 81%;
+    padding: 93px 0 8% 0;
+    position: relative;
+  }
+  .article .cross {
+    top: 1%;
+    right: 7%;
+  }
+  .article::before {
+    content: "";
+    width: 88%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 6%;
+    background-image: url("../../img/connect-wallet/Background Line Mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .article h1 {
+    padding: 0 20% 100px 20%;
+    height: 100px;
+  }
+  .article .wallets {
+    height: 200px;
+    overflow: scroll;
+    gap: 30px;
+  }
+  .article .wallets .wallet {
+    width: 150px;
+    height: 180px;
+    padding: 0 5px;
+  }
+  .article .wallets .wallet p {
+    font-size: 18px;
+  }
+  .article .wallets .wallet .btn {
+    padding: 20% 20% 10% 20%;
+    gap: 25% !important;
+  }
+  .article .wallets .wallet .btn::before {
+    width: 92%;
+    height: 5px;
+    left: 8px;
+  }
+  .article .wallets .wallet .btn::after {
+    width: 5px;
+    height: 99%;
+    right: -1px;
+  }
+  .article .wallets .wallet .square {
+    width: calc(93% - 1px);
+    height: calc(98% + 0.5px);
+    left: 11px;
+  }
+  .article .wallets .wallet img {
+    height: 62px !important;
+  }
+}
+
+/*# sourceMappingURL=connect-wallet.css.map */

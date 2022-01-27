@@ -23,6 +23,7 @@ h1 {
   font-size: 4.931vw;
   font-family: "GT Super";
   text-align: center;
+  color: #025A4D;
 }
 
 header {
@@ -75,6 +76,7 @@ footer {
   background-color: #025A4D;
   width: 100%;
   align-items: center;
+  z-index: 10;
 }
 footer img {
   width: 45%;
