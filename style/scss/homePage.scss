@@ -676,7 +676,11 @@ a,button {
         padding-bottom: 30px;
     }
     .faq {
+        transition: all .4s;
         padding-bottom: 70px;
+        .question {
+            cursor: pointer;
+        }
         .subject{
             font-weight: bold;
 
@@ -685,6 +689,7 @@ a,button {
         
         .response {
             padding-bottom: 30px;
+            display: none;
         }
         .chevron {
             float: right;
@@ -693,6 +698,19 @@ a,button {
     
         .line {
             width: 100%;
+        }
+    }
+
+    #displayMessage {
+        transition: all .4s;
+        .response {
+            padding-bottom: 30px;
+            display: block;
+        }
+        .chevron {
+            float: right;
+            padding: 25px 0;
+            transform: rotate(180deg);
         }
     }
 

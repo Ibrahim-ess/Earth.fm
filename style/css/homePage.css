@@ -602,7 +602,11 @@ a, button {
   padding-bottom: 30px;
 }
 .article9 .faq {
+  transition: all 0.4s;
   padding-bottom: 70px;
+}
+.article9 .faq .question {
+  cursor: pointer;
 }
 .article9 .faq .subject {
   font-weight: bold;
@@ -610,6 +614,7 @@ a, button {
 }
 .article9 .faq .response {
   padding-bottom: 30px;
+  display: none;
 }
 .article9 .faq .chevron {
   float: right;
@@ -617,6 +622,18 @@ a, button {
 }
 .article9 .faq .line {
   width: 100%;
+}
+.article9 #displayMessage {
+  transition: all 0.4s;
+}
+.article9 #displayMessage .response {
+  padding-bottom: 30px;
+  display: block;
+}
+.article9 #displayMessage .chevron {
+  float: right;
+  padding: 25px 0;
+  transform: rotate(180deg);
 }
 .article9 .links {
   justify-content: center;

@@ -4,3 +4,10 @@ window.onload = () => {
     sliderTeam.scrollLeft=230
     action.scrollLeft=90
 }
+
+function showMessage (el) {
+    if(document.getElementById("displayMessage")) {
+        document.getElementById("displayMessage").removeAttribute('id')
+    }
+    el.id="displayMessage"
+}
