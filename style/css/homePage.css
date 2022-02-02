@@ -52,6 +52,10 @@ a, button {
   cursor: pointer;
 }
 
+/*
+*   ARTICLE 1
+*/
+
 .article1 {
   display: flex;
   background-image: url("../../img/homePage/article1/Background.png");
@@ -182,9 +186,67 @@ a, button {
   align-items: center;
   grid-gap: 10px;
 }
-.article1 .rightPart .musicDescription .circle {
-  position: absolute;
+
+.article1 .musicDescription .circleAnimation {
+  position: relative;
+  left: 108%;
+  bottom: 40px;
 }
+
+.article1 .circleAnimation .text span{
+  position: absolute;
+  height: 5vw; 
+  width: 20px;
+  text-align: center;
+  transform-origin: bottom center ;
+  font-size: 1.5vw;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #36B7FF;
+  animation: textAround 5s linear infinite;
+}
+
+.article1 .circleAnimation .circle {
+  position: absolute;
+  top: 2vw;
+  left: -7%;
+  background : #F6E53B;
+  border-radius : 50%;
+  margin : auto;
+  box-shadow : 2px 4px #025A4D;
+  aspect-ratio: 1/1;
+}
+
+.article1 .circleAnimation .circle .play {
+  position: relative;
+  margin: calc(45% - 1.1vw) calc(48% - 0.6vw);
+  height : 0;
+  width : 0;
+  border-top : 1.2vw solid transparent;
+  border-bottom : 1.2vw solid transparent;
+  border-left : 2.2vw solid white;
+  border-radius: 15%;
+  transform:rotate(-11deg) ;
+  z-index: 5;
+}
+
+.article1 .circleAnimation .circle .play2 {
+  position: absolute;
+  left: calc(45% - 0.6vw);
+  top: calc(45% - 1.1vw);
+  height: 3px;
+  width : 0;
+  border-top: 1.5vw solid transparent;
+  border-bottom: 1.2vw solid transparent;
+  border-left: 2.3vw solid #CDBF2D;
+  border-radius: 24%;
+  transform:rotate(-11deg) ;
+}
+
+
+/*
+*   ARTICLE 2
+*/
 
 .article2 {
   width: 100%;
@@ -230,6 +292,10 @@ a, button {
   position: relative;
   right: -25%;
 }
+
+/*
+*   ARTICLE 3
+*/
 
 .article3 {
   padding: 50px 15%;
@@ -287,6 +353,10 @@ a, button {
   top: 110px;
   left: 100px;
 }
+
+/*
+*   ARTICLE 4
+*/
 
 .article4 {
   margin-top: 100px;
@@ -365,6 +435,10 @@ a, button {
   top: -30px;
 }
 
+/*
+*   ARTICLE 5
+*/
+
 .article5 h1 {
   padding-bottom: 80px;
 }
@@ -420,6 +494,10 @@ a, button {
 .article5 .information .buttons #go-below .btn {
   background-color: white;
 }
+
+/*
+*   ARTICLE 6
+*/
 
 .article6 .team {
   background-repeat: no-repeat;
@@ -531,6 +609,10 @@ a, button {
   transition: 0.3s;
 }
 
+/*
+*   ARTICLE 7
+*/
+
 .article7 {
   background-color: white;
 }
@@ -593,10 +675,18 @@ a, button {
   top: 7px;
 }
 
+/*
+*   ARTICLE 8
+*/
+
 .article8 {
   background-color: #025A4D;
   color: white;
 }
+
+/*
+*   ARTICLE 9
+*/
 
 .article9 h1 {
   padding-bottom: 30px;
@@ -655,6 +745,11 @@ a, button {
   transition: 0.3s;
 }
 
+
+/*
+*   COPYRIGHT
+*/
+
 .copyright {
   text-align: center;
   font-weight: bold;
@@ -686,6 +781,7 @@ a, button {
 
   section {
     padding-bottom: 41px;
+    overflow: hidden;
   }
 
   .article1 {
@@ -708,11 +804,6 @@ a, button {
     width: 100%;
     padding: 8px;
     background-color: white;
-  }
-  .article1 .rightPart .circle {
-    right: -20%;
-    bottom: -70px;
-    width: 35%;
   }
   .article1 .rightPart .musicDescription {
     padding: 10px 25px;
@@ -737,6 +828,9 @@ a, button {
   }
   .article1 .rightPart .musicDescription #bid-history {
     font-size: 0.694vw;
+  }
+  .article1 .rightPart .circle {
+    width: 19%;
   }
 
   .article2 .textVisible .left {
@@ -1397,4 +1491,7 @@ a, button {
   }
 }
 
+
+@keyframes textAround {
+}
 /*# sourceMappingURL=homePage.css.map */
