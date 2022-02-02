@@ -63,10 +63,13 @@ section {
 
                     &:hover {
                         cursor: pointer;
-                        gap: 20%;
+                        gap: 10%;
                         transition: .4s;
                         img {
                             height: 60%;
+                        }
+                        p {
+
                         }
                     }
                 }

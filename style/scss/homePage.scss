@@ -56,7 +56,7 @@ a,button {
 
 .article1 {
     display: flex;
-    background-image: url("../../img/homePage/article 1/Background.png");
+    background-image: url("../../img/homePage/article1/Background.png");
     background-repeat: no-repeat;
     .leftPart {
         width: 35%;
@@ -223,7 +223,7 @@ a,button {
             margin-bottom: 30px;
 
             span {
-                background-image: url("../../img/homePage/article 2/Border.png");
+                background-image: url("../../img/homePage/article2/Border.png");
                 padding: 10px 20px;
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
@@ -781,7 +781,7 @@ a,button {
         background-size: 100% 100%;
         margin-bottom: 200px;
         .rightPart {
-            background-image: url("../../img/homePage/article 1/Border 1.png");
+            background-image: url("../../img/homePage/article1/Border 1.png");
             background-repeat: no-repeat;
             background-size: 100% 100%;
             font-size : 1vw;
@@ -888,7 +888,7 @@ a,button {
             width: 18%;
         }
         .music-and-notes {
-            background-image: url("../../img/homePage/article 4/Background.png");
+            background-image: url("../../img/homePage/article4/Background.png");
             background-size: 100% 100%;
             .curvedSentence {
                 width: 80%;
@@ -910,7 +910,7 @@ a,button {
             width: 95%;
             padding: 5%;
             grid-template-columns : 55% 35%;
-            background-image: url("../../img/homePage/article 5/Background.png");
+            background-image: url("../../img/homePage/article5/Background.png");
             
             .btn {
                 font-size: 1.250vw;
@@ -922,7 +922,7 @@ a,button {
         padding: 150px 15%;
         .team {
             padding: 60px 5% 100px 5%;
-            background-image: url("../../img/homePage/article 6/Background.png");
+            background-image: url("../../img/homePage/article6/Background.png");
             .team-members {
                 display: grid;
                 grid-template-columns: 30% 36% 32% ;
@@ -938,14 +938,14 @@ a,button {
             font-size: 1.250vw;
 
             .our-value {
-                background-image: url("../../img/homePage/article 7/Background.png");
+                background-image: url("../../img/homePage/article7/Background.png");
                 background-repeat: no-repeat;
                 background-size: contain;
                 padding: 0 11%;
                 width: 78%;
                 background-position-y:14vw ;
                 &::before {
-                    background-image: url("../../img/homePage/article 7/Background image.png");
+                    background-image: url("../../img/homePage/article7/Background image.png");
                     left: 15%;
                     width: 70%;
                 }
@@ -1017,7 +1017,7 @@ a,button {
 
     .copyright {
         text-align: center; 
-        background-image: url("../../img/homePage/article 9/Background.png");
+        background-image: url("../../img/homePage/article9/Background.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         height: 41vh;
@@ -1151,7 +1151,7 @@ a,button {
 
     .article4 {
         .shooe-and-note {
-            background-image: url("../../img/homePage/article 1/Background.png");
+            background-image: url("../../img/homePage/article1/Background.png");
             background-repeat: no-repeat;
             background-position: center -65px;
             background-size: auto;
@@ -1285,7 +1285,7 @@ a,button {
         }
         .information {
             grid-template-rows : 1fr 1fr; 
-            background-image: url("../../img/homePage/article 5/Background Mobile.png");
+            background-image: url("../../img/homePage/article5/Background Mobile.png");
             padding: 33px 10%;
             width: 80%;
 
@@ -1317,7 +1317,7 @@ a,button {
             &::before {
                 content: '';
                 position: absolute;
-                background-image: url("../../img/homePage/article 6/Background Mobile.png");
+                background-image: url("../../img/homePage/article6/Background Mobile.png");
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
                 margin: 0 10%;
@@ -1420,7 +1420,7 @@ a,button {
                     
                 }
                 &::before {
-                    background-image: url("../../img/homePage/article 7/Background Mobile.png");
+                    background-image: url("../../img/homePage/article7/Background Mobile.png");
                     height: 53%;
                     left: 8%;
                     width: 84%;
@@ -1432,7 +1432,7 @@ a,button {
                     position: absolute;
                     width: 100%;
                     height: 171%;
-                    background-image: url("../../img/homePage/article 7/Background.png");
+                    background-image: url("../../img/homePage/article7/Background.png");
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position-x: -127vw;
@@ -1535,7 +1535,7 @@ a,button {
             position: absolute;
             width: 100%;
             height: 100%;
-            background-image: url("../../img/homePage/article 9/Background.png");
+            background-image: url("../../img/homePage/article9/Background.png");
             background-repeat: no-repeat;
             background-size: cover;
             left: 0;

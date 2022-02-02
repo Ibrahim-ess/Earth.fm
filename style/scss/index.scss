@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap');
+
 
 @font-face {
     font-family: "GT Super";
@@ -58,13 +58,19 @@ header {
     
     .underline {
         position: relative;
-        margin : 0 20px;
-        padding: 8px 15px;
+        margin : 0 35px;
 
         .tab {
             list-style:none;
             font-family: "Roboto Mono";
+            font-weight: 300;
             text-decoration: none;
+            transition: .2s;
+            padding: 3px 0;
+        }
+        #selected {
+            font-weight: 700;
+            border-bottom: 3px solid #F6E53B;
         }
     }
 
@@ -74,7 +80,9 @@ header {
         margin-right: 20px;
         #homeHeader {
             margin: 0;
-            font-weight: 600;
+            .tab {
+                font-weight: 500;
+            }
         }
     }
 }
@@ -132,15 +140,6 @@ footer {
     }
 }
 
-@keyframes header {
-    from {
-        height: 0;
-    }
-    to {
-        height: 100%;
-    }
-}
-
 @media all and (min-width : 801px) {
     .desktop-hidden {
         display: none;
@@ -159,28 +158,15 @@ footer {
         &:hover {
             cursor: pointer;
             .tab {
-                color: white;
-                &::before {
-                    animation: header 0.4s ease forwards;                 
-                }
+                font-weight: 700;
+                transition: .2  s;
             }
-            
+
         }
         .tab {
             font-size: 1.042vw;
             font-size: 15px;
             color : #025A4D;
-            &::before {
-                content: '';
-                height: 1px;
-                width: 100%;
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                opacity: 1;
-                background-color: #025A4D;
-                z-index: -1;
-            }
         }
     }
     .list-header {

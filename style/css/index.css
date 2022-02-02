@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap");
 @font-face {
   font-family: "GT Super";
   src: url("../../fonts/Grilli-Type/GT-Super-Display-Light.woff2") format("woff2");
@@ -51,13 +50,19 @@ header .tabs {
 }
 header .underline {
   position: relative;
-  margin: 0 20px;
-  padding: 8px 15px;
+  margin: 0 35px;
 }
 header .underline .tab {
   list-style: none;
   font-family: "Roboto Mono";
+  font-weight: 300;
   text-decoration: none;
+  transition: 0.2s;
+  padding: 3px 0;
+}
+header .underline #selected {
+  font-weight: 700;
+  border-bottom: 3px solid #F6E53B;
 }
 header .home {
   padding: 0 40px 0 0;
@@ -66,7 +71,9 @@ header .home {
 }
 header .home #homeHeader {
   margin: 0;
-  font-weight: 600;
+}
+header .home #homeHeader .tab {
+  font-weight: 500;
 }
 
 footer {
@@ -120,14 +127,6 @@ footer .progress .progress-line .cursor {
   border: solid 4px #F6E53B;
 }
 
-@keyframes header {
-  from {
-    height: 0;
-  }
-  to {
-    height: 100%;
-  }
-}
 @media all and (min-width: 801px) {
   .desktop-hidden {
     display: none;
@@ -146,26 +145,13 @@ footer .progress .progress-line .cursor {
     cursor: pointer;
   }
   .underline:hover .tab {
-    color: white;
-  }
-  .underline:hover .tab::before {
-    animation: header 0.4s ease forwards;
+    font-weight: 700;
+    transition: 0.2 s;
   }
   .underline .tab {
     font-size: 1.042vw;
     font-size: 15px;
     color: #025A4D;
-  }
-  .underline .tab::before {
-    content: "";
-    height: 1px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    opacity: 1;
-    background-color: #025A4D;
-    z-index: -1;
   }
 
   .list-header {
