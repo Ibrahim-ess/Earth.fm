@@ -1,3 +1,183 @@
+section {
+  padding-top: 80px;
+  color: #025A4D;
+  font-family: "Roboto Mono";
+  overflow: hidden;
+}
 
+button {
+  font-family: "Roboto Mono";
+}
+
+a, button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.article1 {
+  display: flex;
+  background-image: url("../../img/homePage/article1/Background.png");
+  background-repeat: no-repeat;
+}
+.article1 .leftPart {
+  width: 35%;
+}
+.article1 .leftPart > p {
+  font-size: 51px;
+  font-size: 3.542vw;
+  font-family: "GT Super";
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: revert;
+}
+.article1 .leftPart .trees {
+  display: flex;
+  font-family: "Roboto Mono";
+}
+.article1 .leftPart .trees .tree {
+  width: 120px;
+  margin-right: 5%;
+  padding: 15px;
+}
+.article1 .leftPart .trees .tree1 {
+  color: white;
+  background-color: #025A4D;
+}
+.article1 .leftPart .trees .tree2 {
+  color: #025A4D;
+  background-color: white;
+  border: solid 1px #025A4D;
+}
+.article1 .leftPart .trees .number {
+  font-size: 25px;
+  font-weight: bold;
+}
+.article1 .leftPart .trees .description {
+  font-size: 18px;
+}
+.article1 .rightPart {
+  font-family: "Roboto Mono";
+  font-size: 15px;
+  display: flex;
+}
+.article1 .rightPart .rightPartImage {
+  aspect-ratio: 1/1;
+}
+.article1 .rightPart .rightPartImage > img {
+  padding: 8px;
+  background-color: white;
+}
+.article1 .rightPart .musicDescription {
+  position: relative;
+}
+.article1 .rightPart .musicDescription .musicTitle {
+  display: flex;
+  padding-bottom: 5px;
+}
+.article1 .rightPart .musicDescription .musicTitle img {
+  height: 16px;
+}
+.article1 .rightPart .musicDescription .current-bi {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.article1 .rightPart .musicDescription .current-bi .time {
+  font-size: 30px;
+  font-weight: bold;
+}
+.article1 .rightPart .musicDescription .input-eth {
+  position: relative;
+  margin-bottom: 20px;
+}
+.article1 .rightPart .musicDescription .input-eth input {
+  width: 50%;
+  border: 2px solid #025A4D;
+  height: 45px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.article1 .rightPart .musicDescription .input-eth input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.article1 .rightPart .musicDescription .input-eth input:read-write {
+  color: #025A4D;
+}
+.article1 .rightPart .musicDescription .input-eth input:focus {
+  outline: none;
+}
+.article1 .rightPart .musicDescription .input-eth #crypto {
+  position: absolute;
+  top: 12px;
+  font-size: 15px;
+}
+.article1 .rightPart .musicDescription .input-eth .btn-bid {
+  margin-left: 20px;
+}
+.article1 .rightPart .musicDescription .input-eth p {
+  font-size: 12px;
+}
+.article1 .rightPart .musicDescription .other-music {
+  display: grid;
+  grid-template-rows: repeat(3, fit-content(20%));
+  grid-gap: 10px;
+}
+.article1 .rightPart .musicDescription .other-music .music {
+  font-weight: bold;
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 10% 50% 20px 1fr 1fr;
+  align-items: center;
+  grid-gap: 5px;
+}
+.article1 .rightPart .musicDescription .other-music .music .musicImg {
+  width: 20px;
+}
+.article1 .rightPart .musicDescription .other-music .music p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.article1 .rightPart .musicDescription .other-music #bid-history {
+  display: grid;
+  font-size: 10px;
+  grid-template-columns: repeat(2, fit-content(40%));
+  align-items: center;
+  grid-gap: 10px;
+}
+.article1 .rightPart .musicDescription .circleAnimation {
+  position: relative;
+}
+.article1 .rightPart .musicDescription .text span {
+  position: absolute;
+  width: 20px;
+  text-align: center;
+  transform-origin: bottom center;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #36B7FF;
+}
+.article1 .rightPart .musicDescription .circle {
+  position: absolute;
+  background: #F6E53B;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 2px 4px #025A4D;
+  aspect-ratio: 1/1;
+}
+.article1 .rightPart .musicDescription .circle .play {
+  position: relative;
+  height: 0;
+  width: 0;
+  border-radius: 15%;
+  transform: rotate(-11deg);
+  z-index: 5;
+}
+.article1 .rightPart .musicDescription .circle .play2 {
+  position: absolute;
+  height: 3px;
+  width: 0;
+  border-radius: 24%;
+  transform: rotate(-11deg);
+}
 
 /*# sourceMappingURL=art-work.css.map */

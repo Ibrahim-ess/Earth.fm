@@ -1,0 +1,200 @@
+section {
+    padding-top: 80px;
+    color : #025A4D;
+    font-family: "Roboto Mono";
+    overflow: hidden;
+}
+
+button {
+    font-family: "Roboto Mono";
+}
+
+a,button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.article1 {
+    display: flex;
+    background-image: url("../../img/homePage/article1/Background.png");
+    background-repeat: no-repeat;
+    .leftPart {
+        width: 35%;
+
+        & > p{
+            font: {
+                size: 51px;
+                size: 3.542vw;
+                family: "GT Super";
+                weight: bold;
+            }
+            width : 100%;
+            margin-bottom: revert;
+        }
+
+        .trees {
+            display: flex;
+            font-family: "Roboto Mono";
+            
+            .tree {
+                width: 120px;
+                margin-right: 5%;
+                padding: 15px;
+            }
+
+            .tree1 {
+                color : white;
+                background-color: #025A4D;
+            }
+            .tree2 {
+                color : #025A4D;
+                background-color: white;
+                border : solid 1px #025A4D;
+            }
+
+            .number {
+                font-size : 25px;
+                font-weight: bold;
+            } 
+
+            .description {
+                font-size : 18px; 
+            } 
+
+        }
+    }
+
+    .rightPart {
+        font-family: "Roboto Mono";
+        font-size: 15px;
+        display: flex;
+        .rightPartImage {
+            aspect-ratio: 1/1;
+            &>img {
+                padding: 8px;
+                background-color: white;
+            }
+        }
+        .musicDescription {
+            position: relative;
+            .musicTitle {
+                display: flex;
+                padding-bottom: 5px;
+
+                img {
+                    height:16px;
+                }
+            }
+
+            .current-bi {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+
+                .time {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            } 
+            .input-eth {
+                position: relative;
+                margin-bottom: 20px;
+
+                input {
+                    width: 50%;
+                    border: 2px solid #025A4D;
+                    height : 45px;
+                    margin-bottom: 10px;
+                    padding-left: 10px;
+                }
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                }
+                input:read-write { 
+                    color: #025A4D; 
+                }
+                input:focus {
+                    outline: none;
+                }
+                #crypto {
+                    position: absolute;
+                    top: 12px;
+                    font-size: 15px;
+                }
+                .btn-bid {
+                    margin-left: 20px;
+                }
+                
+                p {
+                    font-size: 12px;
+                }
+            }
+            .other-music {
+                display: grid;
+                grid-template-rows: repeat(3, fit-content(20%));
+                grid-gap: 10px;
+                .music {
+                    font-weight: bold;
+                    font-size: 12px;
+                    display: grid;
+                    grid-template-columns: 10% 50% 20px 1fr 1fr;
+                    align-items: center;
+                    grid-gap: 5px;
+                    .musicImg {
+                        width: 20px;
+                    }
+                    p {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+                #bid-history {
+                    display: grid;
+                    font-size: 10px;
+                    grid-template-columns:repeat(2, fit-content(40%));
+                    align-items: center;
+                    grid-gap: 10px ;
+                }
+            }
+            .circleAnimation {
+            position: relative;
+            }
+              
+            .text span{
+                position: absolute;
+                width: 20px;
+                text-align: center;
+                transform-origin: bottom center ;
+                font-family: "Roboto";
+                font-weight: 500;
+                color: #36B7FF;
+            }
+              
+            .circle {
+                position: absolute;
+                background : #F6E53B;
+                border-radius : 50%;
+                margin : auto;
+                box-shadow : 2px 4px #025A4D;
+                aspect-ratio: 1/1;
+            }
+              
+            .circle .play {
+                position: relative;
+                height : 0;
+                width : 0;
+                border-radius: 15%;
+                transform:rotate(-11deg) ;
+                z-index: 5;
+            }
+              
+            .circle .play2 {
+                position: absolute;
+                height: 3px;
+                width : 0;
+                border-radius: 24%;
+                transform:rotate(-11deg) ;
+            }
+        }
+    }
+}

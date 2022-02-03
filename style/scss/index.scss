@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 @font-face {
     font-family: "GT Super";
@@ -94,7 +94,7 @@ footer {
     background-color: #025A4D;
     width: 100%;
     align-items: center;
-    z-index: 10;
+    z-index: 9;
     img {
         width: 45%;
     }
@@ -226,7 +226,6 @@ footer {
             height: 100vh;
             &>* {
                 flex-direction: column;
-                align-items: center;
             }
         }
         .tab {
@@ -249,8 +248,7 @@ footer {
             z-index: 22;
             cursor: pointer;
 
-            &::before {
-                content: '';
+            .top {
                 height: 3px;
                 width: 31px;
                 background : #025A4D;
@@ -259,8 +257,7 @@ footer {
                 transform-origin: top left;
 
             }
-            &::after {
-                content: '';
+            .bottom {
                 height: 3px;
                 width: 31px;
                 background : #025A4D;
@@ -269,7 +266,7 @@ footer {
                 transform-origin: bottom left ;
             }
 
-            span {
+            .center {
                 position: absolute;
                 top: 45%;
                 left: 5px;
@@ -277,28 +274,7 @@ footer {
                 height: 3px;
                 background : #025A4D;
             }
-        }
-        .cross-animation-show {
-            .list-header::after {
-                animation: crossAnimationTopShow 0.4s ease forwards;
-            }
-            .list-header::before {
-                animation: crossAnimationBottomShow 0.4s ease forwards;
-            }
-            .list-header span {
-                animation: crossAnimationMiddleShow 0.4s ease forwards;
-            }
-        }
-        .cross-animation-hide {
-            .list-header::after {
-                animation: crossAnimationTopHide 0.4s ease forwards;
-            }
-            .list-header::before {
-                animation: crossAnimationBottomHide 0.4s ease forwards;
-            }
-            .list-header span {
-                animation: crossAnimationMiddleHide 0.4s ease forwards;
-            }
+            
         }
     }
 
@@ -339,7 +315,7 @@ footer {
     }
 
     to {
-        transform: rotate(-45deg);
+        transform: rotate(45deg);
         width: 44px;
         background-color: white;
     }
@@ -351,7 +327,7 @@ footer {
     }
 
     to {
-        transform: rotate(45deg);
+        transform: rotate(-45deg);
         width: 44px;
         background-color: white;
     }
@@ -363,7 +339,7 @@ footer {
     }
 
     to {
-        transform: rotate(45deg);
+        transform: rotate(-45deg);
         visibility: hidden;
         opacity: 0;
         background-color: white;
@@ -374,7 +350,7 @@ footer {
 
 @keyframes crossAnimationTopHide {
     from {
-        transform: rotate(-45deg);
+        transform: rotate(45deg);
     }
 
     to {
@@ -385,7 +361,7 @@ footer {
 
 @keyframes  crossAnimationBottomHide{
     from {
-        transform: rotate(45deg);
+        transform: rotate(-45deg);
     }
 
     to {
@@ -396,7 +372,7 @@ footer {
 
 @keyframes  crossAnimationMiddleHide{
     from {
-        transform: rotate(45deg);
+        transform: rotate(-45deg);
     }
 
     to {

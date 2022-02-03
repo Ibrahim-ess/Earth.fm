@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @font-face {
   font-family: "GT Super";
   src: url("../../fonts/Grilli-Type/GT-Super-Display-Light.woff2") format("woff2");
@@ -84,7 +84,7 @@ footer {
   background-color: #025A4D;
   width: 100%;
   align-items: center;
-  z-index: 10;
+  z-index: 9;
 }
 footer img {
   width: 45%;
@@ -214,7 +214,6 @@ footer .progress .progress-line .cursor {
   }
   .rowHeader .tabs > * {
     flex-direction: column;
-    align-items: center;
   }
   .rowHeader .tab {
     font-size: 30px;
@@ -235,8 +234,7 @@ footer .progress .progress-line .cursor {
     z-index: 22;
     cursor: pointer;
   }
-  .rowHeader .list-header::before {
-    content: "";
+  .rowHeader .list-header .top {
     height: 3px;
     width: 31px;
     background: #025A4D;
@@ -244,8 +242,7 @@ footer .progress .progress-line .cursor {
     top: 0;
     transform-origin: top left;
   }
-  .rowHeader .list-header::after {
-    content: "";
+  .rowHeader .list-header .bottom {
     height: 3px;
     width: 31px;
     background: #025A4D;
@@ -253,31 +250,13 @@ footer .progress .progress-line .cursor {
     bottom: 0;
     transform-origin: bottom left;
   }
-  .rowHeader .list-header span {
+  .rowHeader .list-header .center {
     position: absolute;
     top: 45%;
     left: 5px;
     width: 20px;
     height: 3px;
     background: #025A4D;
-  }
-  .rowHeader .cross-animation-show .list-header::after {
-    animation: crossAnimationTopShow 0.4s ease forwards;
-  }
-  .rowHeader .cross-animation-show .list-header::before {
-    animation: crossAnimationBottomShow 0.4s ease forwards;
-  }
-  .rowHeader .cross-animation-show .list-header span {
-    animation: crossAnimationMiddleShow 0.4s ease forwards;
-  }
-  .rowHeader .cross-animation-hide .list-header::after {
-    animation: crossAnimationTopHide 0.4s ease forwards;
-  }
-  .rowHeader .cross-animation-hide .list-header::before {
-    animation: crossAnimationBottomHide 0.4s ease forwards;
-  }
-  .rowHeader .cross-animation-hide .list-header span {
-    animation: crossAnimationMiddleHide 0.4s ease forwards;
   }
 
   footer {
@@ -312,7 +291,7 @@ footer .progress .progress-line .cursor {
     transform: rotate(0);
   }
   to {
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
     width: 44px;
     background-color: white;
   }
@@ -322,7 +301,7 @@ footer .progress .progress-line .cursor {
     transform: rotate(0);
   }
   to {
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
     width: 44px;
     background-color: white;
   }
@@ -332,7 +311,7 @@ footer .progress .progress-line .cursor {
     transform: rotate(0);
   }
   to {
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
     visibility: hidden;
     opacity: 0;
     background-color: white;
@@ -341,7 +320,7 @@ footer .progress .progress-line .cursor {
 /* TRANSFORM CROSS INTO LIST (HIDE LIST)*/
 @keyframes crossAnimationTopHide {
   from {
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
   }
   to {
     transform: rotate(0);
@@ -350,7 +329,7 @@ footer .progress .progress-line .cursor {
 }
 @keyframes crossAnimationBottomHide {
   from {
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
   }
   to {
     transform: rotate(0);
@@ -359,7 +338,7 @@ footer .progress .progress-line .cursor {
 }
 @keyframes crossAnimationMiddleHide {
   from {
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
   }
   to {
     transform: rotate(0);

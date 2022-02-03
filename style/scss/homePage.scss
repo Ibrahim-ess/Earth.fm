@@ -3,6 +3,7 @@ section {
     padding-top: 80px;
     color : #025A4D;
     font-family: "Roboto Mono";
+    overflow: hidden;
 }
 
 /**
@@ -200,8 +201,44 @@ a,button {
                     grid-gap: 10px ;
                 }
             }
+            .circleAnimation {
+            position: relative;
+            }
+              
+            .text span{
+                position: absolute;
+                width: 20px;
+                text-align: center;
+                transform-origin: bottom center ;
+                font-family: "Roboto";
+                font-weight: 500;
+                color: #36B7FF;
+            }
+              
             .circle {
                 position: absolute;
+                background : #F6E53B;
+                border-radius : 50%;
+                margin : auto;
+                box-shadow : 2px 4px #025A4D;
+                aspect-ratio: 1/1;
+            }
+              
+            .circle .play {
+                position: relative;
+                height : 0;
+                width : 0;
+                border-radius: 15%;
+                transform:rotate(-11deg) ;
+                z-index: 5;
+            }
+              
+            .circle .play2 {
+                position: absolute;
+                height: 3px;
+                width : 0;
+                border-radius: 24%;
+                transform:rotate(-11deg) ;
             }
         }
     }
@@ -380,7 +417,6 @@ a,button {
             }
         }
         .lstMusic {
-            overflow : hidden;
             background-color: white;
             height: 250px;
             img {
@@ -800,11 +836,6 @@ a,button {
                 }
             }
 
-            .circle {
-                right: -20%;
-                bottom: -70px;
-                width: 35%;
-            }
             .musicDescription{
                 padding: 10px 25px;
 
@@ -832,6 +863,36 @@ a,button {
                 }
                 #bid-history {
                     font-size: 0.694vw;
+                }
+
+                .circle {
+                    width: 19%;
+                    top: 2vw;
+                    left: -7%;
+
+                    .play {
+                        margin: calc(45% - 1.1vw) calc(48% - 0.6vw);
+                        border-top : 1.2vw solid transparent;
+                        border-bottom : 1.2vw solid transparent;
+                        border-left : 2.2vw solid white;
+                    }
+                    .play2 {
+                        left: calc(45% - 0.6vw);
+                        top: calc(45% - 1.1vw);
+                        border-top: 1.5vw solid transparent;
+                        border-bottom: 1.2vw solid transparent;
+                        border-left: 2.3vw solid #CDBF2D;
+                    }
+                }
+            
+                .circleAnimation {
+                    left: 108%;
+                    bottom: 40px;
+
+                    .text span {
+                        height: 5vw; 
+                        font-size: 1.5vw;
+                    }
                 }
             }
         }
@@ -1102,10 +1163,35 @@ a,button {
                 }
             }
         }
+        .circleAnimation {
+            top: -500px;
+            left : 85%;
+        }
+        
+        .text span{
+            height: 45px; 
+            font-size: 13px;
+        }
+        
         .circle {
-            top: -50px;
-            width: 25%;
-            right: 2%;
+            width: 50px;
+            top: 17px;
+            left: -5%;
+        }
+        
+        .circle .play {
+            margin: calc(45% - 12px) 35%;
+            border-top : 12px solid transparent;
+            border-bottom : 13px solid transparent;
+            border-left : 23px solid white;
+        }
+          
+        .circle .play2 {
+            left: 32%;
+            top: 30%;
+            border-top: 12px solid transparent;
+            border-bottom: 13px solid transparent;
+            border-left: 23px solid #CDBF2D;
         }
     }
 

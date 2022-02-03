@@ -2,8 +2,12 @@ section {
   padding-top: 80px;
   color: #025A4D;
   font-family: "Roboto Mono";
+  overflow: hidden;
 }
 
+/**
+ *  3D Button class re-used in this page 
+ */
 .btn-3D, .article7 .list-mission .btn-mission, .article5 .information .buttons .btn-information, .article4 .music-and-notes .notes .btn-note, .article3 .actions .action .btn-action, .article1 .rightPart .musicDescription .input-eth .btn-bid {
   display: inline;
   position: relative;
@@ -51,10 +55,6 @@ a, button {
   text-decoration: none;
   cursor: pointer;
 }
-
-/*
-*   ARTICLE 1
-*/
 
 .article1 {
   display: flex;
@@ -186,67 +186,41 @@ a, button {
   align-items: center;
   grid-gap: 10px;
 }
-
-.article1 .musicDescription .circleAnimation {
+.article1 .rightPart .musicDescription .circleAnimation {
   position: relative;
-  left: 108%;
-  bottom: 40px;
 }
-
-.article1 .circleAnimation .text span{
+.article1 .rightPart .musicDescription .text span {
   position: absolute;
-  height: 5vw; 
   width: 20px;
   text-align: center;
-  transform-origin: bottom center ;
-  font-size: 1.5vw;
+  transform-origin: bottom center;
   font-family: "Roboto";
   font-weight: 500;
   color: #36B7FF;
-  animation: textAround 5s linear infinite;
 }
-
-.article1 .circleAnimation .circle {
+.article1 .rightPart .musicDescription .circle {
   position: absolute;
-  top: 2vw;
-  left: -7%;
-  background : #F6E53B;
-  border-radius : 50%;
-  margin : auto;
-  box-shadow : 2px 4px #025A4D;
+  background: #F6E53B;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 2px 4px #025A4D;
   aspect-ratio: 1/1;
 }
-
-.article1 .circleAnimation .circle .play {
+.article1 .rightPart .musicDescription .circle .play {
   position: relative;
-  margin: calc(45% - 1.1vw) calc(48% - 0.6vw);
-  height : 0;
-  width : 0;
-  border-top : 1.2vw solid transparent;
-  border-bottom : 1.2vw solid transparent;
-  border-left : 2.2vw solid white;
+  height: 0;
+  width: 0;
   border-radius: 15%;
-  transform:rotate(-11deg) ;
+  transform: rotate(-11deg);
   z-index: 5;
 }
-
-.article1 .circleAnimation .circle .play2 {
+.article1 .rightPart .musicDescription .circle .play2 {
   position: absolute;
-  left: calc(45% - 0.6vw);
-  top: calc(45% - 1.1vw);
   height: 3px;
-  width : 0;
-  border-top: 1.5vw solid transparent;
-  border-bottom: 1.2vw solid transparent;
-  border-left: 2.3vw solid #CDBF2D;
+  width: 0;
   border-radius: 24%;
-  transform:rotate(-11deg) ;
+  transform: rotate(-11deg);
 }
-
-
-/*
-*   ARTICLE 2
-*/
 
 .article2 {
   width: 100%;
@@ -292,10 +266,6 @@ a, button {
   position: relative;
   right: -25%;
 }
-
-/*
-*   ARTICLE 3
-*/
 
 .article3 {
   padding: 50px 15%;
@@ -353,10 +323,6 @@ a, button {
   top: 110px;
   left: 100px;
 }
-
-/*
-*   ARTICLE 4
-*/
 
 .article4 {
   margin-top: 100px;
@@ -419,7 +385,6 @@ a, button {
   bottom: 140px;
 }
 .article4 .music-and-notes .lstMusic {
-  overflow: hidden;
   background-color: white;
   height: 250px;
 }
@@ -434,10 +399,6 @@ a, button {
   transition: 0.4s;
   top: -30px;
 }
-
-/*
-*   ARTICLE 5
-*/
 
 .article5 h1 {
   padding-bottom: 80px;
@@ -494,10 +455,6 @@ a, button {
 .article5 .information .buttons #go-below .btn {
   background-color: white;
 }
-
-/*
-*   ARTICLE 6
-*/
 
 .article6 .team {
   background-repeat: no-repeat;
@@ -609,10 +566,6 @@ a, button {
   transition: 0.3s;
 }
 
-/*
-*   ARTICLE 7
-*/
-
 .article7 {
   background-color: white;
 }
@@ -675,18 +628,10 @@ a, button {
   top: 7px;
 }
 
-/*
-*   ARTICLE 8
-*/
-
 .article8 {
   background-color: #025A4D;
   color: white;
 }
-
-/*
-*   ARTICLE 9
-*/
 
 .article9 h1 {
   padding-bottom: 30px;
@@ -745,11 +690,6 @@ a, button {
   transition: 0.3s;
 }
 
-
-/*
-*   COPYRIGHT
-*/
-
 .copyright {
   text-align: center;
   font-weight: bold;
@@ -781,7 +721,6 @@ a, button {
 
   section {
     padding-bottom: 41px;
-    overflow: hidden;
   }
 
   .article1 {
@@ -829,8 +768,31 @@ a, button {
   .article1 .rightPart .musicDescription #bid-history {
     font-size: 0.694vw;
   }
-  .article1 .rightPart .circle {
+  .article1 .rightPart .musicDescription .circle {
     width: 19%;
+    top: 2vw;
+    left: -7%;
+  }
+  .article1 .rightPart .musicDescription .circle .play {
+    margin: calc(45% - 1.1vw) calc(48% - 0.6vw);
+    border-top: 1.2vw solid transparent;
+    border-bottom: 1.2vw solid transparent;
+    border-left: 2.2vw solid white;
+  }
+  .article1 .rightPart .musicDescription .circle .play2 {
+    left: calc(45% - 0.6vw);
+    top: calc(45% - 1.1vw);
+    border-top: 1.5vw solid transparent;
+    border-bottom: 1.2vw solid transparent;
+    border-left: 2.3vw solid #CDBF2D;
+  }
+  .article1 .rightPart .musicDescription .circleAnimation {
+    left: 108%;
+    bottom: 40px;
+  }
+  .article1 .rightPart .musicDescription .circleAnimation .text span {
+    height: 5vw;
+    font-size: 1.5vw;
   }
 
   .article2 .textVisible .left {
@@ -1068,10 +1030,31 @@ a, button {
     top: -5px;
     width: 72px;
   }
+  .article1 .circleAnimation {
+    top: -500px;
+    left: 85%;
+  }
+  .article1 .text span {
+    height: 45px;
+    font-size: 13px;
+  }
   .article1 .circle {
-    top: -50px;
-    width: 25%;
-    right: 2%;
+    width: 50px;
+    top: 17px;
+    left: -5%;
+  }
+  .article1 .circle .play {
+    margin: calc(45% - 12px) 35%;
+    border-top: 12px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 23px solid white;
+  }
+  .article1 .circle .play2 {
+    left: 32%;
+    top: 30%;
+    border-top: 12px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 23px solid #CDBF2D;
   }
 
   .article2 {
@@ -1491,7 +1474,4 @@ a, button {
   }
 }
 
-
-@keyframes textAround {
-}
 /*# sourceMappingURL=homePage.css.map */
