@@ -14,140 +14,45 @@ a, button {
   cursor: pointer;
 }
 
-.article1 {
+.article {
   display: flex;
-  background-image: url("../../img/homePage/article1/Background.png");
+  gap: 3%;
+  background-image: url("../../img/art-work/Background.png");
   background-repeat: no-repeat;
 }
-.article1 .leftPart {
-  width: 35%;
-}
-.article1 .leftPart > p {
-  font-size: 51px;
-  font-size: 3.542vw;
-  font-family: "GT Super";
-  font-weight: bold;
-  width: 100%;
-  margin-bottom: revert;
-}
-.article1 .leftPart .trees {
-  display: flex;
-  font-family: "Roboto Mono";
-}
-.article1 .leftPart .trees .tree {
-  width: 120px;
-  margin-right: 5%;
-  padding: 15px;
-}
-.article1 .leftPart .trees .tree1 {
-  color: white;
-  background-color: #025A4D;
-}
-.article1 .leftPart .trees .tree2 {
-  color: #025A4D;
-  background-color: white;
-  border: solid 1px #025A4D;
-}
-.article1 .leftPart .trees .number {
-  font-size: 25px;
-  font-weight: bold;
-}
-.article1 .leftPart .trees .description {
-  font-size: 18px;
-}
-.article1 .rightPart {
-  font-family: "Roboto Mono";
-  font-size: 15px;
-  display: flex;
-}
-.article1 .rightPart .rightPartImage {
+.article .leftPart img {
+  width: calc(100% - 20px);
   aspect-ratio: 1/1;
-}
-.article1 .rightPart .rightPartImage > img {
-  padding: 8px;
+  padding: 10px;
   background-color: white;
 }
-.article1 .rightPart .musicDescription {
+.article .rightPart {
+  font-family: "Roboto Mono";
+  display: flex;
+}
+.article .rightPart .musicDescription {
   position: relative;
 }
-.article1 .rightPart .musicDescription .musicTitle {
+.article .rightPart .musicDescription .musicTitle {
   display: flex;
   padding-bottom: 5px;
 }
-.article1 .rightPart .musicDescription .musicTitle img {
-  height: 16px;
+.article .rightPart .musicDescription .description {
+  font-weight: 300;
 }
-.article1 .rightPart .musicDescription .current-bi {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+.article .rightPart .musicDescription .description .person {
+  text-decoration: underline;
+  text-decoration-color: #2C70F4;
+  color: #2C70F4;
+  font-weight: 700;
 }
-.article1 .rightPart .musicDescription .current-bi .time {
-  font-size: 30px;
-  font-weight: bold;
+.article .rightPart .musicDescription .born img, .article .rightPart .musicDescription .held img {
+  width: 5%;
 }
-.article1 .rightPart .musicDescription .input-eth {
-  position: relative;
-  margin-bottom: 20px;
-}
-.article1 .rightPart .musicDescription .input-eth input {
-  width: 50%;
-  border: 2px solid #025A4D;
-  height: 45px;
-  margin-bottom: 10px;
-  padding-left: 10px;
-}
-.article1 .rightPart .musicDescription .input-eth input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-.article1 .rightPart .musicDescription .input-eth input:read-write {
-  color: #025A4D;
-}
-.article1 .rightPart .musicDescription .input-eth input:focus {
-  outline: none;
-}
-.article1 .rightPart .musicDescription .input-eth #crypto {
-  position: absolute;
-  top: 12px;
-  font-size: 15px;
-}
-.article1 .rightPart .musicDescription .input-eth .btn-bid {
-  margin-left: 20px;
-}
-.article1 .rightPart .musicDescription .input-eth p {
-  font-size: 12px;
-}
-.article1 .rightPart .musicDescription .other-music {
-  display: grid;
-  grid-template-rows: repeat(3, fit-content(20%));
-  grid-gap: 10px;
-}
-.article1 .rightPart .musicDescription .other-music .music {
-  font-weight: bold;
-  font-size: 12px;
-  display: grid;
-  grid-template-columns: 10% 50% 20px 1fr 1fr;
-  align-items: center;
-  grid-gap: 5px;
-}
-.article1 .rightPart .musicDescription .other-music .music .musicImg {
-  width: 20px;
-}
-.article1 .rightPart .musicDescription .other-music .music p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.article1 .rightPart .musicDescription .other-music #bid-history {
-  display: grid;
-  font-size: 10px;
-  grid-template-columns: repeat(2, fit-content(40%));
-  align-items: center;
-  grid-gap: 10px;
-}
-.article1 .rightPart .musicDescription .circleAnimation {
+.article .rightPart .musicDescription .circleAnimation {
   position: relative;
 }
-.article1 .rightPart .musicDescription .text span {
+.article .rightPart .musicDescription .text span {
   position: absolute;
   width: 20px;
   text-align: center;
@@ -156,7 +61,7 @@ a, button {
   font-weight: 500;
   color: #36B7FF;
 }
-.article1 .rightPart .musicDescription .circle {
+.article .rightPart .musicDescription .circle {
   position: absolute;
   background: #F6E53B;
   border-radius: 50%;
@@ -164,7 +69,7 @@ a, button {
   box-shadow: 2px 4px #025A4D;
   aspect-ratio: 1/1;
 }
-.article1 .rightPart .musicDescription .circle .play {
+.article .rightPart .musicDescription .circle .play {
   position: relative;
   height: 0;
   width: 0;
@@ -172,12 +77,217 @@ a, button {
   transform: rotate(-11deg);
   z-index: 5;
 }
-.article1 .rightPart .musicDescription .circle .play2 {
+.article .rightPart .musicDescription .circle .play2 {
   position: absolute;
   height: 3px;
   width: 0;
   border-radius: 24%;
   transform: rotate(-11deg);
+}
+.article .rightPart .list-activity {
+  padding: 35px 0 0 2%;
+}
+.article .rightPart .list-activity h3 {
+  font-weight: 900;
+  font-family: "GT Super";
+  padding-bottom: 15px;
+}
+.article .rightPart .list-activity .activity {
+  display: flex;
+  gap: 3%;
+  font-weight: 300;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.article .rightPart .list-activity .activity img {
+  height: 3%;
+  flex: 0.5;
+}
+.article .rightPart .list-activity .activity .text {
+  flex: 15;
+}
+.article .rightPart .list-activity .activity .state {
+  margin-left: auto;
+  padding: 4px 10px;
+  font-weight: 700;
+  flex: 2;
+  text-align: center;
+}
+.article .rightPart .list-activity .activity .pending {
+  background: rgba(54, 183, 255, 0.21);
+  color: #1B94D9;
+}
+.article .rightPart .list-activity .activity .passed {
+  background: rgba(2, 90, 77, 0.2);
+  color: #025A4D;
+}
+.article .rightPart .list-activity .activity .failed {
+  background: rgba(241, 79, 47, 0.12);
+  color: #F14F2F;
+}
+.article .rightPart .list-activity .activity b {
+  font-weight: 600;
+}
+
+@media all and (min-width: 801px) {
+  p {
+    font-size: 18px;
+    font-size: 1.25vw;
+  }
+
+  section {
+    padding-bottom: 41px;
+  }
+
+  .article {
+    padding: 60px 9% 0 9%;
+    background-size: 100% 100%;
+    /* RIGHT PART */
+  }
+  .article .leftPart {
+    width: 47%;
+  }
+  .article .rightPart {
+    display: flex;
+    flex-direction: column;
+  }
+  .article .rightPart .musicTitle {
+    font-size: 1.042vw;
+  }
+  .article .rightPart .musicDescription {
+    padding: 40px;
+    padding-bottom: 80px;
+    background-image: url("../../img/art-work/Background Line.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+  }
+  .article .rightPart .musicDescription h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-size: 2vw;
+  }
+  .article .rightPart .musicDescription .description {
+    width: 80%;
+  }
+  .article .rightPart .musicDescription b {
+    font-weight: 700;
+  }
+  .article .rightPart .musicDescription .born, .article .rightPart .musicDescription .held {
+    font-size: 1.389vw;
+    padding-bottom: 22px;
+  }
+  .article .rightPart .musicDescription .born > *, .article .rightPart .musicDescription .held > * {
+    padding-right: 10px;
+  }
+  .article .rightPart .musicDescription .born img, .article .rightPart .musicDescription .held img {
+    width: 5%;
+  }
+  .article .rightPart .musicDescription .circle {
+    width: 19%;
+    top: 2vw;
+    left: -7%;
+  }
+  .article .rightPart .musicDescription .circle .play {
+    margin: calc(45% - 1.1vw) calc(48% - 0.6vw);
+    border-top: 1.2vw solid transparent;
+    border-bottom: 1.2vw solid transparent;
+    border-left: 2.2vw solid white;
+  }
+  .article .rightPart .musicDescription .circle .play2 {
+    left: calc(45% - 0.6vw);
+    top: calc(45% - 1.1vw);
+    border-top: 1.5vw solid transparent;
+    border-bottom: 1.2vw solid transparent;
+    border-left: 2.3vw solid #CDBF2D;
+  }
+  .article .rightPart .musicDescription .circleAnimation {
+    left: 108%;
+    bottom: 40px;
+  }
+  .article .rightPart .musicDescription .circleAnimation .text span {
+    height: 5vw;
+    font-size: 1.5vw;
+  }
+  .article .rightPart .list-activity h3 {
+    font-size: 1.25vw;
+  }
+  .article .rightPart .list-activity .activity p {
+    font-size: 0.833vw;
+  }
+}
+@media all and (max-width: 800px) {
+  p {
+    font-size: 18px;
+  }
+
+  section {
+    padding-bottom: 80px;
+  }
+
+  .article {
+    padding: 50px 7%;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  .article .rightPart {
+    padding: 0;
+    flex-direction: column;
+  }
+  .article .rightPart .rightPartImage img {
+    display: block;
+    width: calc(100% - 16px);
+  }
+  .article .rightPart .musicDescription {
+    padding-top: 20px;
+    display: block;
+  }
+  .article .rightPart .musicDescription .musicTitle {
+    flex-direction: column;
+  }
+  .article .rightPart .musicDescription .musicTitle p {
+    order: 2;
+  }
+  .article .rightPart .musicDescription .musicTitle img {
+    padding: 0 10px 10px 0;
+  }
+  .article .rightPart .musicDescription .born, .article .rightPart .musicDescription .held {
+    font-size: 1.389vw;
+    padding-bottom: 22px;
+  }
+  .article .rightPart .musicDescription .born img, .article .rightPart .musicDescription .held img {
+    width: 6%;
+  }
+  .article .rightPart .musicDescription h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .article .circleAnimation {
+    top: -500px;
+    left: 85%;
+  }
+  .article .text span {
+    height: 45px;
+    font-size: 13px;
+  }
+  .article .circle {
+    width: 50px;
+    top: 17px;
+    left: -5%;
+  }
+  .article .circle .play {
+    margin: calc(45% - 12px) 35%;
+    border-top: 12px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 23px solid white;
+  }
+  .article .circle .play2 {
+    left: 32%;
+    top: 30%;
+    border-top: 12px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 23px solid #CDBF2D;
+  }
 }
 
 /*# sourceMappingURL=art-work.css.map */

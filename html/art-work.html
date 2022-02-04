@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../style/css/index.css">
     <link rel="stylesheet" type="text/css" href="../style/css/art-work.css">
     <link href="/header.html" rel="import" />
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/art-work.js"></script>
 
 </head>
 <body>
@@ -51,62 +52,29 @@
     </header>
 
     <section>
-        <article class="article1">
-            
+        <article class="article">
+            <div class="leftPart">
+                <img src="../img/homePage/article1/art 5.png" alt="imgSound"/>
+            </div>
             <div class="rightPart">
-                <div class="rightPartImage">
-                    <img src="../img/homePage/article1/art 5.png" alt="imgSound"/>
-                </div>
                 <div class="musicDescription">
-                    <span class="musicTitle"> 
-                        <p>Episode 01 - Nov 28. 2021</p> 
-                        <div>
-                            <img src="../img/homePage/article1/leftArrow.png" alt="Left Arrow"/>
-                            <img src="../img/homePage/article1/rightArrowDesactivate.png" alt="Right Arrow"/>
+                    <div class="description">
+                        <span class="musicTitle">Episode 01 - Nov 28. 2021</span>
+                        <h2>Peacefull morning with birds</h2>
+                        <div class="born">
+                            <img src="../img/art-work/Cupcake.png" alt="cupcake"/>
+                            <span>Born November <b>28, 2021</b></span>
                         </div>
-                    </span>
-                    <h2>Peacefull morning with birds</h2>
-                    <div class="current-bi">
-                        <span>
-                            <p class="time">56.69</p>
-                            <p class="label">Current bi</p>
-                        </span>
-                        <span>
-                            <p class="time">6h 14m 43s</p>
-                            <p class="label">Ends in</p>
-                        </span>
-                    </div>
-                    <div class="input-eth">
-                        <label id="crypto" for="amount"> ETH </label> 
-                        <input type="number" name="amount">
-                        <div class="btn-bid" >
-                            <label class="square"></label>
-                            <button class="btn" > <b>BID</b> </button> 
+                        <div class="held">
+                            <img src="../img/art-work/Heart.png" alt="heart"/>
+                            <span>Held by <span class="person">0x53...66bc</span></span>
+                            <img src="../img/art-work/Share.png" alt="share"/>
                         </div>
-                        
-                        
-                        <p>Minimum bid: <b>57.83 ETH</b></p>
-                    </div>
-                    <div class="other-music"> 
-                        <div class="music"> 
-                            <img class="musicImg" src="../img/homePage/article1/art 5.png" alt="music1"/>   
-                            <p>0x17...A1800</p> 
-                            <img src="../img/homePage/article1/Options.png" alt="music1"/>
-                            <p>0.002</p>
-                            <img src="../img/homePage/article1/Share.png" alt="music1"/>
-                        </div>
-                        <div class="music"> 
-                            <img class="musicImg" src="../img/homePage/article1/art 5.png" alt="music1"/>   
-                            <p>kellyk.eth</p> 
-                            <img src="../img/homePage/article1/Options.png" alt="music1"/>
-                            <p>0.001</p>
-                            <img src="../img/homePage/article1/Share.png" alt="music1"/>
-                        </div>
-                        <div id="bid-history">
-                            <p>Bid History </p>
-                            <img src="../img/homePage/article1/rightArrowActivate.png" alt="right Arrow"/>
+                        <div class="buttons">
+
                         </div>
                     </div>
+                    
                     <div class="circleAnimation">
                         <div class="text">Wind is the original radio&nbsp;</div>
                         <div class="circle">
@@ -119,8 +87,66 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="list-activity">
+                    <h3>Activity</h3>
+                    <div class="activities">
+                        <div class="activity">
+                            <img src="../img/art-work/Clock.png" alt="clock"/>
+                            <p class="text">Waiting for <b>center by cdt.eth</b></p>
+                            <p class="state pending">Pending</p>
+                        </div>
+                        <div class="activity">
+                            <img src="../img/art-work/Clock.png" alt="clock"/>
+                            <p class="text">Waiting for <b>earth.fm fashion collection by DANIT</b></p>
+                            <p class="state passed">Passed</p>
+                        </div>
+                        <div class="activity">
+                            <img src="../img/art-work/Bookmark.png" alt="bookmark"/>
+                            <p class="text">Absent for <b>Fix Auction House Proxy Admin Misconfiguration</b></p>
+                            <p class="state failed">Failed</p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </article>
+
+    <footer >
+        <img id="musicImg" src="../img/homePage/article1/art 5.png" alt="musicImg"/>
+        <img class="mobile-hidden" src="../img/homePage/article1/Play.png" alt="Play Image"/>
+        <div class="progressEpisode">
+            <div class="parent-hide-text">
+                <div class="fadeout"></div>
+                <p >Episode 1 - peaceful morning with birds </p>
+            </div>
+            <div class="progress desktop-hidden">
+                <div class="progress-line">
+                    <div class="cursor">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img class="mobile-hidden" id="option" src="../img/homePage/article1/Group 12.png" alt="Options Image"/>
+        <img class="mobile-hidden" src="../img/homePage/article1/Repeat.png" alt="Repeat Image"/>
+        <img class="mobile-hidden" src="../img/homePage/article1/Backward.png" alt="Backward Image"/>
+        <p class="mobile-hidden">30s</p>
+        <img class="mobile-hidden" src="../img/homePage/article1/Forward.png" alt="Forward Image"/>
+        <p class="mobile-hidden">07:11</p>
+        <div class="progress mobile-hidden">
+            <div class="progress-line">
+                <div class="cursor">
+                    
+                </div>
+            </div>
+        </div>
+        <p class="mobile-hidden">-29/50</p>
+        <img class="mobile-hidden" src="../img/homePage/article1/Volume.png" alt="Volume Image"/>
+        <img class="desktop-hidden" src="../img/homePage/article1/Pause.png" alt="Pause Image"/>
+        <img src="../img/homePage/article1/Audio Library.png" alt="Audio Library Image"/>
+    </footer>
 </body>
 </html>
